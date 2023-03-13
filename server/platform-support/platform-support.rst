@@ -289,6 +289,24 @@
      - |checkmark|
      - |checkmark|
 
+   * - Ubuntu 22.04
+     - arm64
+     - Enterprise
+     - |checkmark|
+     -
+     -
+     -
+     -
+
+   * - Ubuntu 22.04
+     - arm64
+     - Community
+     - |checkmark|
+     -
+     -
+     -
+     -
+
    * - Windows Server 2019
      - x86_64
      - Enterprise
