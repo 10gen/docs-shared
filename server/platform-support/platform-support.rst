@@ -325,6 +325,24 @@
      - |checkmark|
      -
 
+   * - Windows Server 2022
+     - x86_64
+     - Enterprise
+     - |checkmark|
+     - 
+     - 
+     - 
+     -
+
+   * - Windows Server 2022
+     - x86_64
+     - Community
+     - |checkmark|
+     - 
+     - 
+     - 
+     -
+
    * - Windows 7/8/8.1
      - x86_64
      - Enterprise
