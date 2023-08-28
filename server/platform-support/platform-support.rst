@@ -380,38 +380,6 @@
      - |checkmark|
      - |checkmark|
 
-   * - Windows 7/8/8.1
-     - x86_64
-     - Enterprise
-     -
-     - 
-     - 
-     - 
-
-   * - Windows 7/8/8.1
-     - x86_64
-     - Community
-     -
-     - 
-     - 
-     - 
-
-   * - Windows Server 2008R2/2012/2012R2
-     - x86_64
-     - Enterprise
-     -
-     - 
-     - 
-     -
-
-   * - Windows Server 2008R2/2012/2012R2
-     - x86_64
-     - Community
-     -
-     - 
-     - 
-     -
-
    * - Windows 10 / Server 2016
      - x86_64
      - Enterprise
@@ -692,14 +660,6 @@
      - 
      - |checkmark|
 
-   * - Ubuntu 16.04
-     - arm64
-     - Community
-     -
-     -
-     -
-     - 
-
    * - RHEL/CentOS Stream/Rocky/Alma 9
      - ppc64le
      - Enterprise
@@ -738,15 +698,7 @@
      - |checkmark|
      - 
      - 
-     - 
-
-   * - RHEL/CentOS Stream/Rocky/Alma 9
-     - s390x
-     - Community
-     - 
-     - 
-     - 
-     - 
+     -
 
    * - RHEL/CentOS Stream/Rocky/Alma 8
      - s390x
@@ -754,15 +706,7 @@
      - |checkmark|
      - |checkmark|
      - 5.0.9+
-     - 
-
-   * - RHEL/CentOS Stream/Rocky/Alma 8
-     - s390x
-     - Community
-     - 
-     - 
-     - 
-     - 
+     -
 
    * - RHEL/CentOS 7
      - s390x
@@ -779,22 +723,6 @@
      - 
      - |checkmark|
      - |checkmark|
-
-   * - RHEL/CentOS 6
-     - s390x
-     - Enterprise
-     -
-     -
-     - 
-     - 
-
-   * - RHEL/CentOS 6
-     - s390x
-     - Community
-     -
-     -
-     -
-     -
 
    * - SLES 12
      - s390x
