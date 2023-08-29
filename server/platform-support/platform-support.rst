@@ -63,7 +63,7 @@
    * - Debian 11
      - x86_64
      - Enterprise
-     - |checkmark| 
+     - |checkmark|
      - |checkmark|
      - 5.0.8+
      - 
