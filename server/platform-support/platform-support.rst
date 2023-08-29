@@ -16,7 +16,7 @@
      - x86_64
      - Enterprise
      - |checkmark|
-     - 6.2.0+
+     -
      - 
      - 
 
@@ -24,7 +24,7 @@
      - x86_64
      - Community
      - |checkmark|
-     - 6.2.0+
+     -
      - 
      - 
 
@@ -62,14 +62,6 @@
 
    * - Debian 11
      - x86_64
-     - Enterprise
-     - |checkmark|
-     - |checkmark|
-     - 5.0.8+
-     - 
-
-   * - Debian 11
-     - x86_64
      - Community
      - |checkmark|
      - |checkmark|
@@ -108,7 +100,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - Oracle Linux (Red Hat Compatible Kernel only) 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+
      - x86_64
      - Enterprise
      - |checkmark|
@@ -116,71 +108,7 @@
      -
      -
 
-   * - Oracle Linux (Red Hat Compatible Kernel only) 9.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - 6.0.4+
-     -
-     -
-   
-   * - Oracle Linux (Red Hat Compatible Kernel only) 8.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 8.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 7.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 7.0+
-     - x86_64
-     - Community
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 6.2+
-     - x86_64
-     - Enterprise
-     -
-     -
-     -
-     - |checkmark|
-
-   * - Oracle Linux (Red Hat Compatible Kernel only) 6.2+
-     - x86_64
-     - Community
-     -
-     -
-     -
-     - |checkmark|
-
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 9.0+
-     - x86_64
-     - Enterprise
-     - |checkmark|
-     - 6.0.4+
-     -
-     -
-
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+
      - x86_64
      - Community
      - |checkmark|
@@ -188,7 +116,7 @@
      -
      -
    
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+
      - x86_64
      - Enterprise
      - |checkmark|
@@ -196,7 +124,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream Linux/Rocky/Alma 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+
      - x86_64
      - Community
      - |checkmark|
@@ -204,7 +132,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+
      - x86_64
      - Enterprise
      - |checkmark|
@@ -212,7 +140,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+
      - x86_64
      - Community
      - |checkmark|
@@ -220,7 +148,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+
      - x86_64
      - Enterprise
      -
@@ -228,7 +156,7 @@
      -
      - |checkmark|
 
-   * - RHEL/CentOS Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+
      - x86_64
      - Community
      -
@@ -544,7 +472,7 @@
      - arm64
      - Enterprise
      - |checkmark|
-     - 6.2.0+ 
+     -
      -
      -
 
@@ -552,7 +480,7 @@
      - arm64
      - Community
      - |checkmark|
-     - 6.2.0+ 
+     -
      -
      -
 
@@ -684,14 +612,6 @@
      - |checkmark| 
      - |checkmark|
 
-   * - Ubuntu 18.04
-     - ppc64le
-     - Enterprise
-     -
-     -
-     - 
-     - 4.4.0 - 4.4.10
-
    * - RHEL/CentOS Stream/Rocky/Alma 9
      - s390x
      - Enterprise
@@ -723,35 +643,3 @@
      - 
      - |checkmark|
      - |checkmark|
-
-   * - SLES 12
-     - s390x
-     - Enterprise
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
-
-   * - SLES 12
-     - s390x
-     - Community
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6 
-
-   * - Ubuntu 18.04
-     - s390x
-     - Enterprise
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
-
-   * - Ubuntu 18.04
-     - s390x
-     - Community
-     -
-     -
-     -
-     - 4.4.0 - 4.4.6
