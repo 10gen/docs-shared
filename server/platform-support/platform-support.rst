@@ -50,7 +50,15 @@
      - |checkmark|
      - 
      - 
+     -
+
+   * - Debian 12
+     - x86_64
+     - Community
+     - |checkmark|
      - 
+     - 
+     -  
   
    * - Debian 11
      - x86_64
