@@ -108,7 +108,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -116,7 +116,7 @@
      -
      -
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 9.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -124,7 +124,7 @@
      -
      -
    
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -132,7 +132,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+
+   * - RHEL/CentOS Stream/Rocky/Alma/Oracle Linux 8.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -140,7 +140,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS/Oracle Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+ [#oracle-support]_
      - x86_64
      - Enterprise
      - |checkmark|
@@ -148,7 +148,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS/Oracle Linux 7.0+
+   * - RHEL/CentOS/Oracle Linux 7.0+ [#oracle-support]_
      - x86_64
      - Community
      - |checkmark|
@@ -156,7 +156,7 @@
      - |checkmark|
      - |checkmark|
 
-   * - RHEL/CentOS/Oracle Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+ [#oracle-support]_
      - x86_64
      - Enterprise
      -
@@ -164,7 +164,7 @@
      -
      - |checkmark|
 
-   * - RHEL/CentOS/Oracle Linux 6.2+
+   * - RHEL/CentOS/Oracle Linux 6.2+ [#oracle-support]_
      - x86_64
      - Community
      -
@@ -651,3 +651,6 @@
      - 
      - |checkmark|
      - |checkmark|
+
+.. [#oracle-support] On Oracle Linux, MongoDB only supports the Red Hat
+   Compatible Kernel.
