@@ -1,3 +1,9 @@
+.. warning:: MongoDB 8.0 Not Yet Available
+
+   MongoDB 8.0 release candidates are not yet
+   available. This version of the manual is for an upcoming release and
+   is currently a work in progress.
+
 .. list-table::
    :header-rows: 1
    :stub-columns: 1
