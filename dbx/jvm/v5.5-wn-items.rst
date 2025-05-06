@@ -1,0 +1,7 @@
+- Introduces performance improvements that are reflected in the driver performance
+  benchmarks. To learn more about these improvements, see the following resources:
+
+  - The :github:`driver benchmark results <mongodb/mongo-java-driver/tree/main/driver-benchmarks>`
+    in the driver source code
+  - The :spec:`Performance Benchmarking </extended-json/extended-json.md#special-rules-for-parsing-uuid-fields>`
+    specification, which describes how we conduct driver performance benchmark tests
