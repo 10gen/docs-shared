@@ -9,7 +9,7 @@ Performance Improvement Metrics
 
 .. note::
 
-   The tests described in this section reflect the performance
+   The tables in this section reflect the performance
    results of the synchronous Java driver. Since the improvements
    were made in the shared driver core, we expect similar performance
    improvement percentages for all Java drivers.
