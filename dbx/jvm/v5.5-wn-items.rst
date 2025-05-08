@@ -18,7 +18,7 @@ the synchronous Java driver. The tests were conducted on a MongoDB Server
 - TLS disabled.
    
 We expect similar performance increases for all MongoDB
-Java drivers because they share the improved ``driver-core`` package.
+Java drivers because they share the improved ``driver-core`` API.
 
 Standard Transport Settings
 ```````````````````````````
