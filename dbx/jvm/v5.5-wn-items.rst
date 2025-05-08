@@ -7,24 +7,26 @@
 Performance Improvements
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
+The tables in this section show the results of performance results for
+the synchronous Java driver. The tests were conducted on a MongoDB Server
+8.0 deployment with the following configuration:
 
-   The tables in this section show the performance
-   results of the synchronous Java driver. The improvements
-   were made in the shared driver core and we expect similar performance
-   improvement percentages for all Java drivers.
-
-   The tests were conducted on MongoDB Server 8.0 with
-   the following configuration:
-
-   - Running on ``localhost`` with negligible network latency.
-     In higher-latency environments, you might see less significant
-     performance improvements.
-   - Authentication disabled.
-   - TLS disabled.
+- Running on ``localhost`` with negligible network latency.
+  In higher-latency environments, you might see less significant
+  performance improvements.
+- Authentication disabled.
+- TLS disabled.
    
-The following table shows the results of performance improvement 
-tests for v5.5 of the driver configured with standard transport settings:
+We expect similar performance increases for all MongoDB
+Java drivers because they share the improved ``driver-core`` package.
+
+Standard Transport Settings
+```````````````````````````
+
+The following table shows the results of performance tests 
+for v5.5 of the driver configured with standard transport settings.
+Each row includes the feature tested, the percent improvement in 
+performance, and the :wikipedia:`z-score <w/index.php?title=Standard_score&oldid=1283065638>`.
 
 .. list-table::
    :header-rows: 1
@@ -67,15 +69,15 @@ tests for v5.5 of the driver configured with standard transport settings:
      - 147.3%
      - 10.39
 
-   * - LDJSON multi-file import
+   * - :wikipedia:`JSON-LD <w/index.php?title=JSON-LD&oldid=1254635130>` multi-file import
      - 21.8%
      - 8.21
 
-   * - Client ``BulkWrite`` insert with large documents
+   * - Client bulk insert with large documents
      - 91.3%
      - 24.44
 
-   * - Collection ``BulkWrite`` insert with large documents
+   * - Collection bulk insert with large documents
      - 96.5%
      - 8.79
 
@@ -91,16 +93,21 @@ tests for v5.5 of the driver configured with standard transport settings:
      - 82.4%
      - 7.28
 
-   * - Client ``BulkWrite`` insert with small documents
+   * - Client bulk insert with small documents
      - 49.5%
      - 17.99
 
-   * - Collection ``BulkWrite`` insert with small documents
+   * - Collection bulk insert with small documents
      - 47.8%
      - 6.44
 
-The following table shows the results of performance improvement 
-tests for v5.5 of the driver configured with Netty transport settings:
+Netty Transport Settings
+````````````````````````
+
+The following table shows the results of performance tests 
+for v5.5 of the driver configured with Netty transport settings.
+Each row includes the feature tested, the percent improvement in 
+performance, and the :wikipedia:`z-score <w/index.php?title=Standard_score&oldid=1283065638>`.
 
 .. list-table::
    :header-rows: 1
@@ -119,15 +126,15 @@ tests for v5.5 of the driver configured with Netty transport settings:
      - 4.4%
      - 4.12
 
-   * - LDJSON multi-file import
+   * - :wikipedia:`JSON-LD <w/index.php?title=JSON-LD&oldid=1254635130>` multi-file import
      - 16.9%
      - 3.77
 
-   * - Client ``BulkWrite`` insert with large documents
+   * - Client bulk insert with large documents
      - 54.8%
      - 14.49
 
-   * - Collection ``BulkWrite`` insert with large documents
+   * - Collection bulk insert with large documents
      - 104.9%
      - 38.72
 
@@ -139,11 +146,11 @@ tests for v5.5 of the driver configured with Netty transport settings:
      - 66.6%
      - 58.65
 
-   * - Client ``BulkWrite`` insert with small documents
+   * - Client bulk insert with small documents
      - 36.1%
      - 15.41
 
-   * - Collection ``BulkWrite`` insert with small documents
+   * - Collection bulk insert with small documents
      - 39.3%
      - 37.38
 
