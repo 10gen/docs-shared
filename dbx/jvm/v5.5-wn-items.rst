@@ -21,7 +21,7 @@ Performance Improvements
      In higher-latency environments, you might see less significant
      performance improvements.
    - Authentication disabled.
-   - TLS enabled.
+   - TLS disabled.
    
 The following table shows the results of performance improvement 
 tests for v5.5 of the driver configured with standard transport settings:
