@@ -1,11 +1,11 @@
 - Introduces performance improvements that are reflected in the driver performance
   benchmarks. To view the results of the performance benchmark tests, see the following
-  :ref:`java-5.5-performance-metrics` section.
+  :ref:`java-5.5-performance-improvements` section.
 
-.. _java-5.5-performance-metrics:
+.. _java-5.5-performance-improvements:
 
-Performance Improvement Metrics
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performance Improvements
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -13,6 +13,10 @@ Performance Improvement Metrics
    results of the synchronous Java driver. Since the improvements
    were made in the shared driver core, we expect similar performance
    improvement percentages for all Java drivers.
+
+   The tests were conducted on the ``localhost`` server with a
+   negligible network latency. In higher-latency environments, 
+   you might see less significant performance improvements.
 
 The following table shows the results of performance improvement 
 tests for v5.5 of the driver configured with standard transport settings:
