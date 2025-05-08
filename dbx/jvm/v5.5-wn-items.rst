@@ -9,9 +9,9 @@ Performance Improvements
 
 .. note::
 
-   The tables in this section reflect the performance
-   results of the synchronous Java driver. Since the improvements
-   were made in the shared driver core, we expect similar performance
+   The tables in this section show the performance
+   results of the synchronous Java driver. The improvements
+   were made in the shared driver core and we expect similar performance
    improvement percentages for all Java drivers.
 
    The tests were conducted on MongoDB Server 8.0 with
@@ -20,8 +20,8 @@ Performance Improvements
    - Running on ``localhost`` with negligible network latency.
      In higher-latency environments, you might see less significant
      performance improvements.
-   - Authentication disabled
-   - TLS enabled
+   - Authentication disabled.
+   - TLS enabled.
    
 The following table shows the results of performance improvement 
 tests for v5.5 of the driver configured with standard transport settings:
