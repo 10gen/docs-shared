@@ -14,10 +14,15 @@ Performance Improvements
    were made in the shared driver core, we expect similar performance
    improvement percentages for all Java drivers.
 
-   The tests were conducted on the ``localhost`` server with a
-   negligible network latency. In higher-latency environments, 
-   you might see less significant performance improvements.
+   The tests were conducted on MongoDB Server 8.0 with
+   the following configuration:
 
+   - Running on ``localhost`` with negligible network latency.
+     In higher-latency environments, you might see less significant
+     performance improvements.
+   - Authentication disabled
+   - TLS enabled
+   
 The following table shows the results of performance improvement 
 tests for v5.5 of the driver configured with standard transport settings:
 
@@ -77,6 +82,10 @@ tests for v5.5 of the driver configured with standard transport settings:
    * - Bulk insert with large documents
      - 93.3%
      - 8.11
+
+   * - Bulk insert with small documents
+     - 39.3%
+     - 5.72
 
    * - Insert one with large documents
      - 82.4%
