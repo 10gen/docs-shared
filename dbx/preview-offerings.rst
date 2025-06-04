@@ -1,5 +1,6 @@
-.. tip::
+.. important:: Preview Features
 
-   To learn more about preview features and their limitations, see the
-   `Preview Features <https://www.mongodb.com/docs/preview-features/>`__
+   Preview features have technical and security limitations, and we
+   do not recommend their use in production environments. To learn more about
+   preview feature considerations, see the `Preview Features <https://www.mongodb.com/docs/preview-features/>`__
    page.
