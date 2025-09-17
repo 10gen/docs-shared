@@ -1,7 +1,11 @@
 - Adds experimental support for Queryable Encryption prefix, suffix, and substring queries.
-  These features are unstable, and their security is not guaranteed until they're
-  generally available (GA). Use them in experimental workloads only.
   To learn more about QE, see :ref:`In-Use Encryption <csharp-fle>`.
+  
+  .. note:: Experimental Feature
+
+    Queryable Encryption prefix, suffix, and substring queries are unstable, and their
+    security is not guaranteed until they're generally available (GA). Use them in
+    experimental workloads only.
 
 - Adds an ``nsType`` field to ``ChangeStreamDocument`` objects. This field contains the
   namespace type (``COLLECTION``, ``TIMESERIES``, or ``VIEW``) of the change event.
@@ -23,7 +27,7 @@
 
 - Deprecates the ``MongoNamespace.COMMAND_COLLECTION_NAME`` constant.
 
-- Fixes a bug that prevented OIDC reauthentication when working within a session.
+- Fixes a bug that prevented OIDC reauthentication within a session.
 
 - When serializing a POJO annotated with ``@BsonDiscriminator``, if the property's ``readName``
   matches the discriminator key, the driver serializes the field only once.
