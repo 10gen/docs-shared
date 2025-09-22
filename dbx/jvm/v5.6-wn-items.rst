@@ -1,5 +1,5 @@
 - Adds experimental support for Queryable Encryption prefix, suffix, and substring queries.
-  To learn more about QE, see :ref:`In-Use Encryption <csharp-fle>`.
+  To learn more about QE, see |encrypt-link|.
   
   .. note:: Experimental Feature
 
