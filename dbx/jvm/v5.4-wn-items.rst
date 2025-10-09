@@ -18,7 +18,7 @@
 
 - Adds Kubernetes support for OIDC authentication. To learn more, see |k8s-link|.
 
-- Adds first class support for the following Atlas Search query operators:
+- Adds first class support for the following MongoDB Search query operators:
   
   - ``phrase``
   
