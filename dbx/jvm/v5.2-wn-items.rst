@@ -99,5 +99,5 @@
     can pass a ``numCandidates`` parameter when instantiating this type
     to specify the number of nearest neighbors to consider.
 
-  To learn more about using the Atlas Vector Search feature, see
+  To learn more about using the MongoDB Vector Search feature, see
   |vector-search-link|.

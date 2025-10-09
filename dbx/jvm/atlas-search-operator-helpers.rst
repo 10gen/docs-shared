@@ -64,7 +64,7 @@ Example Pipeline Search Stage
    sample dataset, see the :atlas:`Get Started with Atlas </getting-started/>` tutorial
    in the Atlas documentation.
 
-Before you can run this example, you must create an Atlas Search index on the ``movies``
+Before you can run this example, you must create a MongoDB Search index on the ``movies``
 collection that has the following definition:
 
 .. code-block:: json
@@ -85,7 +85,7 @@ collection that has the following definition:
      }
    }
 
-To learn more about creating Atlas Search indexes, see |as-idx-link|.
+To learn more about creating MongoDB Search indexes, see |as-idx-link|.
 
 The following code creates a ``$search`` stage that has the following
 specifications:
@@ -97,6 +97,6 @@ specifications:
 
 |atlas-query-operators-example|
 
-To learn more about the Atlas Search helper methods, see the
+To learn more about the MongoDB Search helper methods, see the
 `SearchOperator <{+core-api+}/client/model/search/SearchOperator.html>`__ interface reference
 in the Driver Core API documentation.
