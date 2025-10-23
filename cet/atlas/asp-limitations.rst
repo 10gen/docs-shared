@@ -1,5 +1,5 @@
 .. note::
 
-   You cannot use :ref:`Time series collections <manual-timeseries-collection>`  
-   as a source for {+atlas-sp+} because these collection types
-   do not support :ref:`Change Streams <changeStreams>`.
+   You cannot use :ref:`time series collections <manual-timeseries-collection>`  
+   as a source for {+atlas-sp+} :ref:`{+atlas-sp+} <atlas-sp>`. Time series
+   collections do not support :ref:`change streams <changeStreams>`.
