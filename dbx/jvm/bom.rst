@@ -35,8 +35,9 @@ to view instructions for adding the BOM for each dependency manager:
    .. tab:: Gradle
       :tabid: gradle bom
 
-      Add the following code to dependencies list in your
-      |gradle-filename| file:
+      Add the following code to the dependencies list in your
+      |gradle-filename| file. The code examples in this guide use the
+      Kotlin domain-specific language (DSL) for Gradle:
 
       .. code-block:: groovy
 
