@@ -37,7 +37,7 @@ to view instructions for adding the BOM for each dependency manager:
 
       Add the following code to the dependencies list in your
       |gradle-filename| file. The code examples in this guide use the
-      Kotlin DSL for Gradle:
+      Kotlin domain-specific language (DSL) for Gradle:
 
       .. code-block:: groovy
 
