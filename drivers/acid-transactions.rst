@@ -5,8 +5,7 @@ could lead to serious financial, legal, or safety consequences.
 
 By default, operations on single documents conform to ACID standards. For
 operations on multiple documents or collections, MongoDB supports multi-document
-ACID transactions using sessions. These transactions use the snapshot isolation
-level so applications see a consistent set of data while the transaction is
-running and write concerns to ensure changes are safely saved. With these
-features, MongoDB provides ACID guarantees that are comparable to those found in
-traditional relational databases.
+ACID transactions by using sessions. Sessions operate on data from a single
+point-in-time snapshot, so applications see a consistent set of data while the
+transaction is running. Sessions rely on write concerns to ensure changes to data are
+submitted safely. 
