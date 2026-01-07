@@ -3,17 +3,20 @@
   that applies to all operations performed with that client. To learn more,
   see |csot-link|.
 
-  .. important:: Deprecated Timeout Options
+  .. important::
 
-     The following timeout options are deprecated:
+    CSOT is an **experimental** feature and not yet production ready. This
+    feature is optional in the current release and existing timeout options
+    remain functional.
 
-     - ``waitQueueTimeoutMS``
-     - ``socketTimeoutMS``
-     - ``wTimeoutMS``
-     - ``maxTimeMS``
-     - ``maxCommitTimeMS``
+  If, and only if, the experimental CSOT feature is enabled, the following
+  timeout options are ignored by the driver:
 
-     Use the CSOT feature to replace the functionality of these options.
+  - ``waitQueueTimeoutMS``
+  - ``socketTimeoutMS``
+  - ``wTimeoutMS``
+  - ``maxTimeMS``
+  - ``maxCommitTimeMS``
 
 - Adds the ``SearchIndexType`` class, which you can pass
   when constructing a ``SearchIndexModel`` instance. This change
