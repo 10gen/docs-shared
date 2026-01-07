@@ -10,7 +10,11 @@
 - Adds an ``nsType`` field to ``ChangeStreamDocument`` objects. This field contains the
   namespace type (``COLLECTION``, ``TIMESERIES``, or ``VIEW``) of the change event.
 
-- Adds client-side operation timeout (CSOT) support for OIDC authentication.
+- Adds experimental client-side operation timeout (CSOT) support for OIDC authentication.
+
+  .. note:: Experimental Feature
+
+    The CSOT feature is experimental and might change in future driver releases.
 
 - When ``timeoutMS`` is set for CSOT, the driver ignores the value of the ``maxWaitTime``
   connection setting.
