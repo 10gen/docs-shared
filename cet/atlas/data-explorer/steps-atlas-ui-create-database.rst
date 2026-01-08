@@ -26,8 +26,11 @@
       Enter the :guilabel:`Database Name` and the :guilabel:`Collection
       Name` to create the database and its first collection.
 
-      .. include:: /atlas-ui/includes/shared/collection-options.rst
-      
+      If you want to use :manual:`custom collation
+      </reference/collation/#collation-document>` on the collection,
+      select the :guilabel:`Use Custom Collation` checkbox and select the
+      desired collation settings.   
+
       .. important::
       
          Don't include :ref:`sensitive information <sensitive-info>` in 
