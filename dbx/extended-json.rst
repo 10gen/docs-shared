@@ -48,13 +48,7 @@ The following table describes each Extended JSON format:
        | This format prioritizes compatibility with the MongoDB shell, which often uses
          JavaScript functions to represent types. |driver-specific-text-shell|
 
-.. note::
-
-   The {+driver-short+} parses the ``$uuid`` Extended JSON type from a string to a
-   ``BsonBinary`` object of binary subtype 4. For more information about ``$uuid`` field
-   parsing, see the
-   :spec:`special rules for parsing $uuid fields </extended-json/extended-json.md#special-rules-for-parsing-uuid-fields>`
-   section in the extended JSON specification.
+|uuid-field-note|
 
 .. _extended_json_example_section:
 
