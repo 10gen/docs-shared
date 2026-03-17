@@ -7,5 +7,5 @@ The following code shows a connection string that uses the SRV connection format
 
 |srv-uri|
 
-To learn more about the SRV connection format, see the :manual:`SRV Connection Format </reference/connection-string/#std-label-connections-dns-seedlist>`
+To learn more about the SRV connection format, see the :manual:`SRV Connection Format </reference/connection-string-formats/#std-label-connections-dns-seedlist>`
 entry in the {+mdb-server+} manual.
