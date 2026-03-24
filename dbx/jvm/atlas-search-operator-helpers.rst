@@ -57,13 +57,6 @@ The {+driver-short+} provides helper methods for the following operators:
 Example Pipeline Search Stage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. note:: Atlas Sample Dataset
-
-   This example uses the ``sample_mflix.movies`` collection from the Atlas sample
-   datasets. To learn how to set up a free-tier Atlas cluster and load the
-   sample dataset, see the :atlas:`Get Started with Atlas </getting-started/>` tutorial
-   in the Atlas documentation.
-
 Before you can run this example, you must create a MongoDB Search index on the ``movies``
 collection that has the following definition:
 
