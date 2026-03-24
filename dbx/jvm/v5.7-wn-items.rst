@@ -1,0 +1,2 @@
+- Simplifies ``ServerMonitor`` thread names and removes the
+  ``=`` character, which some monitoring systems cannot process.
