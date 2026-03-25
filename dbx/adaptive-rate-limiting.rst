@@ -1,11 +1,12 @@
 .. note::
 
-   You may find errors with ``SystemOverloadedError`` or ``RetryableError`` in
-   your application logs if your have not updated your |driver-name| to version
-   |ivm-compatible-version|. These errors indicate that the server is under
-   heavy load and is applying adaptive rate limiting to manage resources
-   effectively. To mitigate these errors, consider updating your |driver-name|
-   to version |ivm-compatible-version|.
+   If you find errors with ``SystemOverloadedError`` or ``RetryableError``
+   labels in your application logs, you can consider changes to your retry
+   settings. One option is to enable adaptive rate limiting on your server.
+   Adaptive rate limiting helps manage server load by dynamically adjusting
+   request rates based on current conditions, while also managing client-side
+   retry requests to mitigate errors. This feature is available on MongoDB 8.3
+   and supported by the |driver-name| version |ivm-compatible-version|.
    
    For more information, see the :atlas:`Reliability, Availability, and Workload
    Management </intelligent-workload-management/>` page or :atlas:`Overload
