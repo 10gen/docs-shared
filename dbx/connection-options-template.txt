@@ -1,0 +1,1285 @@
+.. _c-connection-options:
+
+==========================
+Specify Connection Options
+==========================
+
+.. TODO: replace all instances of "c" with the driver's short name (e.g. "node")
+
+.. facet::
+   :name: genre
+   :values: reference
+
+.. meta::
+   :keywords: connection string, URI, server, Atlas, settings, configure
+   :description: Explore MongoDB C Driver connection options, including network, authentication, retry, and timeout settings configurable by using connection string or URI.
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. toctree::
+   :caption: Specify Connection Options
+
+   Stable API </connect/connection-options/stable-api>
+   Connection Pools </connect/connection-options/connection-pools>
+   AWS Lambda <https://www.mongodb.com/docs/atlas/manage-connections-aws-lambda/>
+
+.. Compress Network Traffic </connect/connection-options/network-compression>
+
+Overview
+--------
+
+This page describes the connection options available in the {+driver-short+} and
+explains how to apply them to your MongoDB connection.
+
+How to Specify Connection Options
+---------------------------------
+
+The following sections describe the ways in which you can specify connection options.
+
+.. _c-connection-uri:
+
+Use the Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you pass a connection string to the ``monogoc_client_t`` structure, you can include
+connection options in the string as ``<name>=<value>`` pairs. In the following example,
+the connection string contains the ``connectTimeoutMS`` option with a value of ``60000``
+and the ``tls`` option with a value of ``true``:
+
+.. literalinclude::
+   :language:
+   :dedent:
+   :start-after:
+   :end-before:
+
+To learn more about the options that you can specify in a connection string, see
+:manual:`Connection String Options </reference/connection-string-options>` in the
+{+mdb-server+} manual.
+
+.. _c-mongo-client-settings:
+
+Use the URI Options API
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can use URI options to configure connection settings in code
+rather than in a connection string. Configuring the connection this way makes it easier to
+change settings at runtime, helps you catch errors during compilation, and provides
+more configuration options than the connection string.
+
+To set connection options by using the URI option, perform the
+following steps:
+
+1. Create a ``mongoc_uri_t`` struct with your connection string
+#. Use a URI option function to specify your desired connection option
+#. Create a new client with the URI by passing the URI to ``mongoc_client_new_from_uri()``
+
+The following code example shows how to perform the preceding steps:
+
+.. literalinclude::
+   :language:
+   :dedent:
+   :start-after:
+   :end-before:
+
+Connection Options
+------------------
+
+.. TODO: Replace these sections with whatever methods for specify the connection option. 
+
+The following sections describe the connection options available in the
+{+driver-short+} and how to specify them by using a connection string directly or
+a URI option.
+
+.. _c-replica-set-options:
+
+Replica Set Options
+~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongoc-connection-uri
+
+      Direct Connection
+      ```````````````````
+
+      .. sharedinclude:: dbx/connection-options/directConnection.rst
+
+      *Data Type* : 
+
+      *Default Value* : 
+
+      *Example* : 
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Replica Set
+      ````````````
+
+      .. sharedinclude:: dbx/connection-options/replicaSetName.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Direct Connection
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/directConnection.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Replica Set
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/replicaSetName.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+TLS Options
+~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongoc-connection-uri
+
+      Enable TLS
+      ````````````
+
+      .. sharedinclude:: dbx/connection-options/useTls.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Allow Insecure TLS
+      ````````````````````
+
+      .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      TLS Disable Certificate Revocation Check
+      ``````````````````````````````````````````
+
+      Whether to disable certificate revocation checking during the TLS handshake. The
+      default value is ``false``.
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      SSL Options
+      ```````````
+
+      TLS/SSL options, including client certificates, revocation handling, and
+      enabled and disabled TLS/SSL protocols. The default value is ``null``.
+
+      This option can only be set by using URI Options. To learn how to set SSL Options,
+      see the SSL Options section under the :guilabel:`MongoC URI Option` tab.
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Enable TLS
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/useTls.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Allow Insecure TLS
+      ```````````````````
+
+      .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      TLS Disable Certificate Revocation Check
+      ``````````````````````````````````````````
+
+      Whether to disable certificate revocation checking during the TLS handshake. The
+      default value is ``false``.
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      SSL Options
+      ```````````
+
+      TLS/SSL options, including client certificates, revocation handling, and
+      enabled and disabled TLS/SSL protocols. The default value is ``null``.
+
+      If ``SslSettings.CheckCertificateRevocation`` is set to ``false`` and
+      ``AllowInsecureTls`` is set to ``true``, the {+driver-short+} throws
+      an exception.
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+For more information on TLS options, see the :ref:`c-tls` guide.
+
+Timeout Options
+~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Connect Timeout
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/connectTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Socket Timeout
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/socketTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Connect Timeout
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/connectTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Socket Timeout
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/socketTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Compression Options
+~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Compressors
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/compressors.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Compressors
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/compressors.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Connection Pool Options
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Max Pool Size
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Wait Queue Timeout
+      ```````````````````
+
+      .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Max Connection Pool Size
+      ``````````````````````````
+
+      .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set the max connection pool size by using a ``mongoc_client_pool_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Wait Queue Timeout
+      `````````````````````
+
+      .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+To learn more about connection pools, see the :ref:`c-connection-pools` guide.
+
+Write Concern Options
+~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      w
+      ```
+      .. sharedinclude:: dbx/connection-options/wConcern.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      w Timeout
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/wTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Journal
+      ```````
+
+      The ``j`` component of the write concern, which requests acknowledgment that the
+      MongoDB instances have written to the on-disk journal. The default value depends on
+      the value in the ``writeConcernMajorityJournalDefault`` setting. To learn more about the
+      ``j`` option, see :manual:`Write Concern </reference/write-concern/#j-option>`
+      in the {+mdb-server+} manual.
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      w
+      ```
+      .. sharedinclude:: dbx/connection-options/wConcern.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set ``w`` by using the ``MONGOC_URI_W`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set ``w`` by using a ``mongoc_write_concern_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      w Timeout
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/wTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set ``wtimeoutms`` by using the ``MONGOC_URI_WTIMEOUTMS`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set ``wtimeoutms`` by using a ``mongoc_write_concern_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Journal
+      ```````
+
+      .. sharedinclude:: dbx/connection-options/journal.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set ``journal`` by using the ``MONGOC_URI_JOURNAL`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set ``journal`` by using a ``mongoc_write_concern_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Read Concern Options
+~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+
+      Read Concern Level
+      ````````````````````
+
+      .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Read Concern Level
+      ````````````````````
+
+      .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set the read concern level by using the ``MONGOC_URI_READCONCERNLEVEL`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set the read concern level by using a ``mongoc_read_concern_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Read Preference Options
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Read Preference
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/readPreference.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Max Staleness
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/maxStaleness.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Local Threshold
+      ```````````````
+
+      .. sharedinclude:: dbx/connection-options/localThreshold.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Read Preference
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/readPreference.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set the read preference by using a ``mongoc_read_prefs_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set the read preference by using the ``MONGOC_URI_READPREFERENCE`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Max Staleness
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/maxStaleness.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      You can set the max staleness by using the ``MONGOC_URI_MAXSTALENESSSECONDS`` option:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      You can also set the max staleness by using a ``mongoc_read_prefs_t`` structure:
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Local Threshold
+      ```````````````
+
+      .. sharedinclude:: dbx/connection-options/localThreshold.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Authentication Options
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Authentication Mechanism
+      ``````````````````````````
+
+      .. sharedinclude:: dbx/connection-options/authMechanism.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. TODO: insert auth guide refs here.
+
+      To learn more about available authentication mechanisms, see the :ref:`Authentication Mechanisms < >`
+      or the :ref:`Enterprise Authentication Mechanisms < >` guide.
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+         :emphasize-lines: 3
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Authentication Mechanism
+      ``````````````````````````
+
+      .. sharedinclude:: dbx/connection-options/authMechanism.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+         :emphasize-lines: 3
+
+Server Selection and Discovery Options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Heartbeat Frequency
+      ````````````````````
+
+      .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Server Selection Timeout
+      ``````````````````````````
+
+      .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Socket Check Interval
+      ```````````````````````
+
+      .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Heartbeat Frequency
+      ````````````````````
+
+      .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Server Selection Timeout
+      `````````````````````````
+
+      .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Socket Check Interval
+      ```````````````````````
+
+      .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Retry Options
+~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Retry Reads
+      `````````````
+      
+      .. sharedinclude:: dbx/connection-options/retryReads.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Retry Writes
+      ````````````
+      
+      .. sharedinclude:: dbx/connection-options/retryWrites.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Retry Reads
+      `````````````
+      
+      .. sharedinclude:: dbx/connection-options/retryReads.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Retry Writes
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/retryWrites.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+.. sharedinclude:: dbx/adaptive-rate-limiting.rst
+
+   .. replacement:: driver-name
+
+      {+driver-long+}
+
+   .. replacement:: ivm-compatible-version
+
+      2.3
+
+   .. replacement:: language
+
+      {+language+}
+
+Miscellaneous Options
+~~~~~~~~~~~~~~~~~~~~~
+
+.. tabs::
+
+   .. tab:: Connection String
+      :tabid: mongo-client-settings
+
+      Application Name
+      `````````````````
+
+      .. sharedinclude:: dbx/connection-options/applicationName.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Load Balanced
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/loadBalanced.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      SrvMaxHosts
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+   .. tab:: URI Option
+      :tabid: mongo-url-builder
+
+      Application Name
+      ````````````````
+
+      .. sharedinclude:: dbx/connection-options/applicationName.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      Load Balanced
+      ``````````````
+
+      .. sharedinclude:: dbx/connection-options/loadBalanced.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+      SrvMaxHosts
+      ```````````
+
+      .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
+
+      .. literalinclude::
+         :language:
+         :copyable: true
+         :dedent:
+         :start-after:
+         :end-before:
+
+Additional Information
+----------------------
+
+For more information about the types used on this page, see the
+following API documentation:
+

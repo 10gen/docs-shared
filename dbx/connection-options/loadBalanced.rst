@@ -5,5 +5,3 @@ property to ``true`` only if all the following conditions are met:
 - You're not connecting to a replica set
 - You're not using the ``SrvMaxHosts`` property
 - You're not using the ``DirectConnection`` property
-
-The default value is ``false``.

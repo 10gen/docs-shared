@@ -1,2 +1,1 @@
-The length of time the driver tries to select a server before timing out. The default
-value is ``30000`` ms (30 seconds). 
+The length of time the driver tries to select a server before timing out.

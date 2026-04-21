@@ -1,1 +1,1 @@
-Enables retryable writes. The default value is ``true``.
+Enables retryable writes.
