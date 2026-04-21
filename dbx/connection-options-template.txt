@@ -226,6 +226,8 @@ TLS Options
       TLS Disable Certificate Revocation Check
       ``````````````````````````````````````````
 
+      .. TODO: Driver specific content, decide whether to use or delete this section.
+
       Whether to disable certificate revocation checking during the TLS handshake. The
       default value is ``false``.
 
@@ -238,6 +240,8 @@ TLS Options
 
       SSL Options
       ```````````
+
+      .. TODO: Driver specific content, decide whether to use or delete this section.
 
       TLS/SSL options, including client certificates, revocation handling, and
       enabled and disabled TLS/SSL protocols. The default value is ``null``.
@@ -286,6 +290,8 @@ TLS Options
 
       TLS Disable Certificate Revocation Check
       ``````````````````````````````````````````
+
+      .. TODO: Driver specific content, decide whether to use or delete this section.
 
       Whether to disable certificate revocation checking during the TLS handshake. The
       default value is ``false``.
@@ -511,6 +517,8 @@ Connection Pool Options
          :start-after:
          :end-before:
 
+      .. TODO: Driver specific content, decide whether to use or delete this section.
+
       You can also set the max connection pool size by using a ``mongoc_client_pool_t`` structure:
 
       .. literalinclude::
@@ -521,7 +529,7 @@ Connection Pool Options
          :end-before:
 
       Wait Queue Timeout
-      `````````````````````
+      ```````````````````
 
       .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
 
@@ -586,11 +594,13 @@ Write Concern Options
       Journal
       ```````
 
-      The ``j`` component of the write concern, which requests acknowledgment that the
-      MongoDB instances have written to the on-disk journal. The default value depends on
-      the value in the ``writeConcernMajorityJournalDefault`` setting. To learn more about the
-      ``j`` option, see :manual:`Write Concern </reference/write-concern/#j-option>`
-      in the {+mdb-server+} manual.
+      .. sharedinclude:: dbx/connection-options/journal.rst
+
+      *Data Type* :
+
+      *Default Value* :
+
+      *Example* :
 
       .. literalinclude::
          :language:
@@ -611,6 +621,8 @@ Write Concern Options
       *Default Value* :
 
       *Example* :
+
+      .. TODO: Driver specific content, decide whether to use or delete this section. Ex of adding additional code examples.
 
       You can set ``w`` by using the ``MONGOC_URI_W`` option:
 
@@ -641,6 +653,8 @@ Write Concern Options
 
       *Example* :
 
+      .. TODO: Driver specific content, decide whether to use or delete this section.
+
       You can set ``wtimeoutms`` by using the ``MONGOC_URI_WTIMEOUTMS`` option:
 
       .. literalinclude::
@@ -669,6 +683,8 @@ Write Concern Options
       *Default Value* :
 
       *Example* :
+
+      .. TODO: Driver specific content, decide whether to use or delete this section.
 
       You can set ``journal`` by using the ``MONGOC_URI_JOURNAL`` option:
 
@@ -1143,6 +1159,8 @@ Retry Options
          :dedent:
          :start-after:
          :end-before:
+
+.. TODO: Driver specific content, decide whether to use or delete this section.
 
 .. sharedinclude:: dbx/adaptive-rate-limiting.rst
 
