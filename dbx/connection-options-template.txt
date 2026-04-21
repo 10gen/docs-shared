@@ -1,12 +1,14 @@
-.. _c-connection-options:
+.. _template-connection-options:
 
-.. NOTE: Meant to be copied and used as a template for the connection options page. 
+.. NOTE: You can use this template for the connection options page in a drivers documentation set. 
+.. Copy this content into the corresponding page for the driver you are documenting, and replace and 
+.. edit content as needed. This is not meant to be used as a shared include. 
 
 ==========================
 Specify Connection Options
 ==========================
 
-.. TODO: replace all instances of "c" with the driver's short name (e.g. "node")
+.. TODO: replace all instances of "template" in refs with the driver's short name (e.g. "node")
 
 .. facet::
    :name: genre
@@ -40,11 +42,12 @@ explains how to apply them to your MongoDB connection.
 How to Specify Connection Options
 ---------------------------------
 
-.. TODO: Replace these sections with whatever methods for specify the connection option. 
+.. TODO: Replace these sections with whatever methods the driver you are documenting 
+.. supports for specifying connection options. 
 
 The following sections describe the ways in which you can specify connection options.
 
-.. _c-connection-uri:
+.. _template-connection-uri:
 
 Use the Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,10 +64,10 @@ and the ``tls`` option with a value of ``true``:
    :end-before:
 
 To learn more about the options that you can specify in a connection string, see
-:manual:`Connection String Options </reference/connection-string-options>` in the
+:ref:`Connection String Options <connections-connection-options>` in the
 {+mdb-server+} manual.
 
-.. _c-mongo-client-settings:
+.. _template-mongo-client-settings:
 
 Use the URI Options API
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,9 +97,10 @@ Connection Options
 
 The following sections describe the connection options available in the
 {+driver-short+} and how to specify them by using a connection string directly or
-a URI option.
+a URI option. Select the :guilabel:`Connection String` tab  or :guilabel:`URI Option` 
+tab to see the corresponding syntax.
 
-.. _c-replica-set-options:
+.. _template-replica-set-options:
 
 Replica Set Options
 ~~~~~~~~~~~~~~~~~~~
@@ -322,7 +326,7 @@ TLS Options
          :start-after:
          :end-before:
 
-For more information on TLS options, see the :ref:`c-tls` guide.
+For more information on TLS options, see the :ref:`template-tls` guide.
 
 Timeout Options
 ~~~~~~~~~~~~~~~
@@ -548,7 +552,7 @@ Connection Pool Options
          :start-after:
          :end-before:
 
-To learn more about connection pools, see the :ref:`c-connection-pools` guide.
+To learn more about connection pools, see the :ref:`template-connection-pools` guide.
 
 Write Concern Options
 ~~~~~~~~~~~~~~~~~~~~~
@@ -756,6 +760,8 @@ Read Concern Options
          :start-after:
          :end-before:
 
+      .. TODO: Driver specific content, decide whether to use or delete this section.
+
       You can also set the read concern level by using a ``mongoc_read_concern_t`` structure:
 
       .. literalinclude::
@@ -850,6 +856,8 @@ Read Preference Options
          :start-after:
          :end-before:
 
+      .. TODO: Driver specific content, decide whether to use or delete this section.
+
       You can also set the read preference by using the ``MONGOC_URI_READPREFERENCE`` option:
 
       .. literalinclude::
@@ -878,6 +886,8 @@ Read Preference Options
          :dedent:
          :start-after:
          :end-before:
+
+      .. TODO: Driver specific content, decide whether to use or delete this section.
 
       You can also set the max staleness by using a ``mongoc_read_prefs_t`` structure:
 
