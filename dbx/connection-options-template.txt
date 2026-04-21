@@ -38,6 +38,8 @@ explains how to apply them to your MongoDB connection.
 How to Specify Connection Options
 ---------------------------------
 
+.. TODO: Replace these sections with whatever methods for specify the connection option. 
+
 The following sections describe the ways in which you can specify connection options.
 
 .. _c-connection-uri:
@@ -87,8 +89,6 @@ The following code example shows how to perform the preceding steps:
 
 Connection Options
 ------------------
-
-.. TODO: Replace these sections with whatever methods for specify the connection option. 
 
 The following sections describe the connection options available in the
 {+driver-short+} and how to specify them by using a connection string directly or
