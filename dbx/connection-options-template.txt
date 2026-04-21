@@ -1,5 +1,7 @@
 .. _c-connection-options:
 
+.. NOTE: Meant to be copied and used as a template for the connection options page. 
+
 ==========================
 Specify Connection Options
 ==========================
