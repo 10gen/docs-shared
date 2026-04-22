@@ -115,11 +115,11 @@ Replica Set Options
 
       .. sharedinclude:: dbx/connection-options/directConnection.rst
 
-      *Data Type* : 
+      **Data Type:** 
 
-      *Default Value* : 
+      **Default Value:** 
 
-      *Example* : 
+      **Example:** 
 
       .. literalinclude::
          :language:
@@ -133,11 +133,11 @@ Replica Set Options
 
       .. sharedinclude:: dbx/connection-options/replicaSetName.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -154,11 +154,11 @@ Replica Set Options
 
       .. sharedinclude:: dbx/connection-options/directConnection.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -172,11 +172,11 @@ Replica Set Options
 
       .. sharedinclude:: dbx/connection-options/replicaSetName.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -198,11 +198,11 @@ TLS Options
 
       .. sharedinclude:: dbx/connection-options/useTls.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -216,11 +216,11 @@ TLS Options
 
       .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -263,11 +263,11 @@ TLS Options
 
       .. sharedinclude:: dbx/connection-options/useTls.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -281,11 +281,11 @@ TLS Options
 
       .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -341,11 +341,11 @@ Timeout Options
 
       .. sharedinclude:: dbx/connection-options/connectTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -359,11 +359,11 @@ Timeout Options
 
       .. sharedinclude:: dbx/connection-options/socketTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -380,11 +380,11 @@ Timeout Options
 
       .. sharedinclude:: dbx/connection-options/connectTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -398,11 +398,11 @@ Timeout Options
 
       .. sharedinclude:: dbx/connection-options/socketTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -424,11 +424,11 @@ Compression Options
 
       .. sharedinclude:: dbx/connection-options/compressors.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -445,11 +445,11 @@ Compression Options
 
       .. sharedinclude:: dbx/connection-options/compressors.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -471,11 +471,11 @@ Connection Pool Options
 
       .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -489,11 +489,11 @@ Connection Pool Options
 
       .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -510,11 +510,11 @@ Connection Pool Options
 
       .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -539,11 +539,11 @@ Connection Pool Options
 
       .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -566,11 +566,11 @@ Write Concern Options
       ```
       .. sharedinclude:: dbx/connection-options/wConcern.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -584,11 +584,11 @@ Write Concern Options
 
       .. sharedinclude:: dbx/connection-options/wTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -602,11 +602,11 @@ Write Concern Options
 
       .. sharedinclude:: dbx/connection-options/journal.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -622,11 +622,11 @@ Write Concern Options
       ```
       .. sharedinclude:: dbx/connection-options/wConcern.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. TODO: Driver specific content, decide whether to use or delete this section. Ex of adding additional code examples.
 
@@ -653,11 +653,11 @@ Write Concern Options
 
       .. sharedinclude:: dbx/connection-options/wTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. TODO: Driver specific content, decide whether to use or delete this section.
 
@@ -684,11 +684,11 @@ Write Concern Options
 
       .. sharedinclude:: dbx/connection-options/journal.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. TODO: Driver specific content, decide whether to use or delete this section.
 
@@ -724,11 +724,11 @@ Read Concern Options
 
       .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -745,11 +745,11 @@ Read Concern Options
 
       .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       You can set the read concern level by using the ``MONGOC_URI_READCONCERNLEVEL`` option:
 
@@ -784,11 +784,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/readPreference.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -802,11 +802,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/maxStaleness.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -820,11 +820,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/localThreshold.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -841,11 +841,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/readPreference.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       You can set the read preference by using a ``mongoc_read_prefs_t`` structure:
 
@@ -872,11 +872,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/maxStaleness.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       You can set the max staleness by using the ``MONGOC_URI_MAXSTALENESSSECONDS`` option:
 
@@ -903,11 +903,11 @@ Read Preference Options
 
       .. sharedinclude:: dbx/connection-options/localThreshold.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -929,11 +929,11 @@ Authentication Options
 
       .. sharedinclude:: dbx/connection-options/authMechanism.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. TODO: insert auth guide refs here.
 
@@ -956,11 +956,11 @@ Authentication Options
 
       .. sharedinclude:: dbx/connection-options/authMechanism.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -983,11 +983,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1001,11 +1001,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1019,11 +1019,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1040,11 +1040,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1058,11 +1058,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1076,11 +1076,11 @@ Server Selection and Discovery Options
 
       .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1102,11 +1102,11 @@ Retry Options
       
       .. sharedinclude:: dbx/connection-options/retryReads.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1120,11 +1120,11 @@ Retry Options
       
       .. sharedinclude:: dbx/connection-options/retryWrites.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1141,11 +1141,11 @@ Retry Options
       
       .. sharedinclude:: dbx/connection-options/retryReads.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1159,11 +1159,11 @@ Retry Options
 
       .. sharedinclude:: dbx/connection-options/retryWrites.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1201,11 +1201,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/applicationName.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1219,11 +1219,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/loadBalanced.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1237,11 +1237,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1258,11 +1258,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/applicationName.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1276,11 +1276,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/loadBalanced.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
@@ -1294,11 +1294,11 @@ Miscellaneous Options
 
       .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
 
-      *Data Type* :
+      **Data Type:**
 
-      *Default Value* :
+      **Default Value:**
 
-      *Example* :
+      **Example:**
 
       .. literalinclude::
          :language:
