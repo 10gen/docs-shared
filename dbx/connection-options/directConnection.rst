@@ -5,5 +5,5 @@ instead. To learn more about the SRV connection
 and the standard connection formats, see the :ref:`Connection Strings <mongodb-uri>` guide
 in the {+mdb-server+} manual.
 
-The default value is ``false``. This property must be set to ``false`` if you 
+This property must be set to ``false`` if you 
 specify more than one host name.
