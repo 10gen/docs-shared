@@ -12,7 +12,7 @@ A collection named ``employees`` has the following documents:
 
 The following ``Employee`` class models documents in the ``employees`` collection:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/Employee.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/Employee.cs
    :language: csharp
 
 .. sharedinclude:: dbx/aggregation/csharp/method-intro.rst
@@ -34,7 +34,7 @@ The following ``Employee`` class models documents in the ``employees`` collectio
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start graphLookupBasic
    :end-before: // end graphLookupBasic
    :language: csharp
@@ -45,7 +45,7 @@ object to specify the depth to recurse and name of the depth field. The followin
 code example performs the same ``$graphLookup`` operation as the previous example,
 but specifies a maximum recursion depth of ``1``:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start graphLookupDepth
    :end-before: // end graphLookupDepth
    :language: csharp
@@ -56,7 +56,7 @@ must match in order for MongoDB to include them in your search. The following co
 example performs the same ``$graphLookup`` operation as the previous examples, but
 includes only ``Employee`` documents where the ``Hobbies`` field contains ``"golf"``:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start graphLookupMatch
    :end-before: // end graphLookupMatch
    :language: csharp

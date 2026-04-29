@@ -3,7 +3,7 @@
 
 The following class models ``ImdbData`` documents:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/ImdbData.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/ImdbData.cs
    :language: csharp
 
 .. sharedinclude:: dbx/aggregation/csharp/method-intro.rst
@@ -25,7 +25,7 @@ The following class models ``ImdbData`` documents:
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start replaceWith
    :end-before: // end replaceWith
    :language: csharp

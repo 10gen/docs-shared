@@ -30,7 +30,7 @@ which contain measurements for the same ``position`` field, one hour apart:
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start densify
    :end-before: // end densify
    :language: csharp

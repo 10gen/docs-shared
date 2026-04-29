@@ -20,7 +20,7 @@
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start bucket
@@ -33,7 +33,7 @@ The following example performs the same ``$bucket`` operation as the previous ex
 but groups all documents with a ``Runtime`` value greater than ``999`` into the
 default bucket, named ``"Other"``:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start bucketOptions
    :end-before: // end bucketOptions
    :language: csharp

@@ -19,7 +19,7 @@ to include multiple fields.
 The following code example produces a document that includes only the ``_id``,
 ``plot``, and ``title`` fields:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start include
@@ -46,7 +46,7 @@ to exclude multiple fields.
 
 The following code example produces a document that excludes the ``Type`` field:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start excludeFields
@@ -56,7 +56,7 @@ By default, result documents always include the ``_id`` field. The following cod
 example produces a document that excludes the ``_id`` field but includes the ``plot``
 and ``title`` fields:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start excludeId
@@ -83,7 +83,7 @@ class property. You can chain ``Exclude()`` calls to exclude multiple fields.
 The following code example produces a document that excludes the ``imdb.id``
 and ``type`` fields:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start excludeFieldsEmbedded
@@ -113,7 +113,7 @@ Conditionally Exclude Fields
 You can use the variable :variable:`REMOVE` in aggregation expressions
 to conditionally suppress a field:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start excludeFieldsConditional
@@ -159,13 +159,13 @@ call the ``Expression()`` method on the projection builder and pass an expressio
 that includes the computed fields. For added type safety, you can define a model
 class for the result documents, like the following ``ProjectedMovie`` class:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectedMovie.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectedMovie.cs
    :language: csharp
 
 The following code example produces a document that includes multiple computed
 fields:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start includeFieldsComputed
@@ -191,13 +191,13 @@ call the ``Expression()`` method on the projection builder and pass an expressio
 that includes the new array fields. For added type safety, you can define a model
 class for the result documents, like the following ``ProjectedMovie`` class:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectedMovie.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectedMovie.cs
    :language: csharp
 
 The following code example produces documents that include a new array field,
 ``crew``, which contains values from the ``directors`` and ``writers`` fields:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start newArrayFields
@@ -220,7 +220,7 @@ document, the pipeline substitutes ``null`` as the value for that
 field. For example, the following code example projects the fields ``directors``, ``writers``,
 and a non-existent field, ``makeupArtists``, as elements in a new field named ``crew``:
 
-.. literalinclude:: /includes/driver-examples/csharp/projection/ProjectionExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/projection/ProjectionExamples.cs
    :language: csharp
    :dedent: 8
    :start-after: // start nonExistentNewArrayFields

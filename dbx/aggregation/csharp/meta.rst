@@ -7,7 +7,7 @@ method on the projection builder.
 
 First, run the following code to create a text index on the ``Title`` field:
 
-.. literalinclude:: /includes/driver-examples/csharp/meta/MetaExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/meta/MetaExamples.cs
    :start-after: // start createIndex
    :end-before: // end createIndex
    :language: csharp
@@ -18,7 +18,7 @@ for the term ``"future"`` and uses the ``MetaTextScore()`` method to include the
 score assigned to each matching document. The code then sorts the results in
 descending order by their text score and returns the document with the highest score.
 
-.. literalinclude:: /includes/driver-examples/csharp/meta/MetaExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/meta/MetaExamples.cs
    :start-after: // start metaTextScore
    :end-before: // end metaTextScore
    :language: csharp

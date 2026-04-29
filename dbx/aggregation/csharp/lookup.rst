@@ -4,7 +4,7 @@
 The following ``Comment`` class models the documents in the ``sample_mflix.comments``
 collection:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/Comment.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/Comment.cs
    :language: csharp
 
 .. sharedinclude:: dbx/aggregation/csharp/method-intro.rst
@@ -28,7 +28,7 @@ collection:
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start lookup
    :end-before: // end lookup
    :language: csharp

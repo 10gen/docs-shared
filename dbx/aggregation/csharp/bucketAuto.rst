@@ -20,7 +20,7 @@
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start bucketAuto
    :end-before: // end bucketAuto
    :language: csharp
@@ -32,7 +32,7 @@ object to specify a :wikipedia:`preferred number <Preferred_number>`
 The following example performs the same ``$bucketAuto`` operation as the previous
 example, but also sets the bucket boundaries at powers of 2:
 
-.. literalinclude:: /includes/driver-examples/csharp/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/aggregation/BuildersExamples.cs
    :start-after: // start bucketAutoOptions
    :end-before: // end bucketAutoOptions
    :language: csharp

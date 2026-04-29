@@ -7,7 +7,7 @@ Driver documentation.
 The following ``Movie`` class models the documents in the ``sample_mflix.movies``
 collection:
 
-.. literalinclude:: /includes/driver-examples/csharp/meta/Movie.cs
+.. literalinclude:: /dbx/aggregation/csharp/code/meta/Movie.cs
    :language: csharp
 
 .. sharedinclude:: dbx/aggregation/csharp/convention-pack-note.rst
