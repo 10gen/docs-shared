@@ -17,7 +17,7 @@
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start changeStream
    :end-before: // end changeStream
    :language: csharp
@@ -33,7 +33,7 @@ example, but specifies the following options:
 - The ``StartAtOperationTime`` option specifies the logical starting point for the
   change stream.
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start changeStreamOptions
    :end-before: // end changeStreamOptions
    :language: csharp

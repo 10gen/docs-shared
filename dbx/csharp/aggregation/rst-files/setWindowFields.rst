@@ -2,7 +2,7 @@
 The following ``WeatherMeasurement`` class represents documents in a collection
 of weather measurements:
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/WeatherMeasurement.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/WeatherMeasurement.cs
    :language: csharp
 
 .. sharedinclude:: dbx/csharp/aggregation/method-intro.rst
@@ -25,7 +25,7 @@ of weather measurements:
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start setWindowFields
    :end-before: // end setWindowFields
    :language: csharp

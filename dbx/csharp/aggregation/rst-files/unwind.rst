@@ -21,7 +21,7 @@
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start unwind
    :end-before: // end unwind
    :language: csharp
@@ -38,7 +38,7 @@ example, but also includes the following options:
   document. The value of this field is the array index of the ``Genres`` field's value
   in the input document's ``Genres`` array.
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start unwindPreserve
    :end-before: // end unwindPreserve
    :language: csharp
