@@ -35,7 +35,7 @@
         not match a document in the ``movies`` collection, it should be inserted into the
         ``movies`` collection.
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start merge
    :end-before: // end merge
    :language: csharp

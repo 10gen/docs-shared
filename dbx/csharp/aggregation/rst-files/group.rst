@@ -23,7 +23,7 @@
       
    .. replacement:: more-method-description
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start group
    :end-before: // end group
    :language: csharp

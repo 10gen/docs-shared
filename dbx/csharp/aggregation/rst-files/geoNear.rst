@@ -30,7 +30,7 @@
 
    .. replacement:: more-method-description
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start geoNear
    :end-before: // end geoNear
    :language: csharp
@@ -47,7 +47,7 @@ parameter that only matches documents in which the value of the
 the calculated distance in the ``distance`` field of the output
 documents.
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/BuildersExamples.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/BuildersExamples.cs
    :start-after: // start geoNear min
    :end-before: // end geoNear min
    :language: csharp

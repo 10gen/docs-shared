@@ -10,7 +10,7 @@ The following ``Movie`` and ``ImdbData`` classes model the documents in the
 .. literalinclude:: /dbx/csharp/aggregation/code/projection/Movie.cs
    :language: csharp
 
-.. literalinclude:: /dbx/csharp/aggregation/code/aggregation/ImdbData.cs
+.. literalinclude:: /dbx/csharp/aggregation/code/ImdbData.cs
    :language: csharp
 
 .. sharedinclude:: dbx/csharp/aggregation/convention-pack-note.rst
