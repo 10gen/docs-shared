@@ -1,6 +1,9 @@
 - :red:`Important:` The next minor release will drop support for MongoDB
-  Server version 4.2 and raise the minimum supported version to 4.4. We
-  recommend making changes to your application to accommodate breaking changes.
+  Server version 4.2 and raise the minimum supported version to 4.4.
+  This change aligns with the :website:`MongoDB Software Lifecycle Schedules
+  <legal/support-policy/lifecycles>`.
+  
+  We recommend making changes to your application to accommodate breaking changes.
   To learn more about upgrading your server version, see the :manual:`Release Notes </release-notes/>`
   section in the MongoDB Server manual.
 
