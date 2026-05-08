@@ -1,0 +1,7 @@
+- Upgrades ``libcrypt`` to 1.17.3
+- Uses ``ZstdInputStreamNoFinalizer`` for Zstandard decompression
+- Releases connection between empty ``getMore`` responses in ``AsyncCommandCursor``
+- Adds stack-safe async loop support with trampoline pattern to prevent stack overflow errors
+- Fixes parsing error of ``JSONPrimitive`` numbers, where scientifically formatted numbers 
+  were parsed as plain Ints or Longs.
+- Improves Micrometer observability integration.
