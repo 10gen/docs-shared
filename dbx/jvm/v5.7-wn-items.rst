@@ -5,3 +5,5 @@
 - Fixes parsing error of ``JSONPrimitive`` numbers, where scientifically formatted numbers 
   were parsed as plain Ints or Longs.
 - Improves Micrometer observability integration.
+- Simplifies ``ServerMonitor`` thread names and removes the
+  ``=`` character, which some monitoring systems cannot process.
