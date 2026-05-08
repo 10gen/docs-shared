@@ -1,8 +1,8 @@
 .. important:: 
 
-    The minimum supported MongoDB Server version will raise from 
-    4.2 to 4.4 in a future release. We recommend upgrading to the latest MongoDB 
-    Server version to take advantage of the latest features and improvements 
+    The next minor release will drop support for MongoDB Server version 4.2 and 
+    raise the minimum supported version to 4.4. We recommend upgrading to the latest 
+    MongoDB Server version to take advantage of the latest features and improvements 
     in the driver. See the :manual:`Release Notes </release-notes/>` section 
     in the Server manual to learn more about upgrading.
 
