@@ -1,14 +1,21 @@
+[BsonIgnoreExtraElements]
 public class Weather
 {
-    public Guid Id { get; set; }
-    
-    public Point Position { get; set; }
-  
+    [BsonId]
+    public ObjectId Id { get; set; }
+
+    [BsonElement("position")]
+    public Point Position { get; set; } = null!;
+
     [BsonElement("ts")]
     public DateTime Timestamp { get; set; }
 }
 
 public class Point
 {
-    public float[] Coordinates { get; set; }
+    [BsonElement("type")]
+    public string Type { get; set; } = null!;
+
+    [BsonElement("coordinates")]
+    public double[] Coordinates { get; set; } = null!;
 }
