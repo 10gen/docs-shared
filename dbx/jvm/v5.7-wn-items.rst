@@ -1,2 +1,52 @@
-- Simplifies ``ServerMonitor`` thread names and removes the
-  ``=`` character, which some monitoring systems cannot process.
+- :red:`Important:` The next minor release will drop support for MongoDB
+  Server version 4.2 and raise the minimum supported version to 4.4. We
+  recommend upgrading to the latest MongoDB Server version to take advantage
+  of the latest features and improvements in the driver. See the
+  :manual:`Release Notes </release-notes/>` section in the Server manual to
+  learn more about upgrading.
+
+- Adds Scala 3 support.
+
+- Adds auto-embedding support as part of vector search APIs.
+
+- Adds Micrometer/OpenTelemetry tracing support to the reactive-streams
+  driver, and includes general Micrometer support improvements.
+
+- Adds stack-safe async loop support with trampoline pattern to prevent
+  stack overflow errors.
+
+- Improves client-side timeout handling to better account for round-trip
+  time (RTT) variations, along with various small timeout-related improvements.
+
+- Reuses ``ConnectionSource`` to avoid extra server selection.
+
+- Restores the optimized codec path for ``RawBsonDocument`` encoding,
+  fixing a performance regression.
+
+- Releases the connection between empty ``getMore`` responses in
+  ``AsyncCommandCursor``, preventing connection pool exhaustion when idle
+  change streams reach ``maxPoolSize``.
+
+- The encryption client now uses ``writeConcern`` majority.
+
+- Handles unexpected end-of-stream errors from KMS.
+
+- Fixes ``JsonBsonEncoder`` parsing of ``JsonPrimitive`` numbers, where
+  scientifically formatted numbers were parsed as plain Ints or Longs.
+
+- Simplifies ``ServerMonitor`` thread names and removes the ``=`` character,
+  which some monitoring systems cannot process.
+
+- Fixes Kotlin BSON decoding of optionals.
+
+- Upgrades ``libmongocrypt`` to 1.17.3.
+
+- Uses ``ZstdInputStreamNoFinalizer`` for Zstandard decompression.
+
+- Updates Netty to the latest version.
+
+- Updates Snappy for the latest security fixes.
+
+- Updates JUnit 5 to the latest version.
+
+- Aligns the log level to warning when removing a server from the cluster.
