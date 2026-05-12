@@ -1,0 +1,1 @@
+The length of time a connection can be pooled before expiring.

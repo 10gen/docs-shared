@@ -1,0 +1,1 @@
+The length of time the driver tries to select a server before timing out.
