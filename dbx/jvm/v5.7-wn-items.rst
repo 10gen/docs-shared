@@ -1,9 +1,11 @@
 - :red:`Important:` The next minor release will drop support for MongoDB
-  Server version 4.2 and raise the minimum supported version to 4.4. We
-  recommend upgrading to the latest MongoDB Server version to take advantage
-  of the latest features and improvements in the driver. See the
-  :manual:`Release Notes </release-notes/>` section in the Server manual to
-  learn more about upgrading.
+  Server version 4.2 and raise the minimum supported version to 4.4.
+  This change aligns with the :website:`MongoDB Software Lifecycle Schedules
+  <legal/support-policy/lifecycles>`.
+  
+  We recommend making changes to your application to accommodate breaking changes.
+  To learn more about upgrading your server version, see the :manual:`Release Notes </release-notes/>`
+  section in the MongoDB Server manual.
 
 - Adds Scala 3 support.
 
