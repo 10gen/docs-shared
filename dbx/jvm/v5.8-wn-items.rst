@@ -21,7 +21,7 @@
 - Fixes an OSGi bundle resolution failure when Micrometer is
   not present.
 
-- Adds missing Javadoc to ``MongodbObservation`` and
-  ``MongodbObservationContext``.
+- Adds Javadoc documentation to the ``MongodbObservation`` and
+  ``MongodbObservationContext`` classes.
 
-- Upgrades ``libmongocrypt`` to 1.18.1.
+- Upgrades the ``libmongocrypt`` version to 1.18.1.
