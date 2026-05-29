@@ -1,7 +1,7 @@
 - Adds a typed builder API for vector search index definitions.
 
 - Adds support for the ``$rerank`` aggregation stage. When connected to an Atlas cluster running
-  on MongoDB 8.3 or later, you can use the ``Aggregates.rerank()`` builder method to create this stage.
+  MongoDB 8.3 or later, you can use the ``Aggregates.rerank()`` builder method to create this stage.
 
 - Adds support for the ``vectorSearch`` operator in a ``$search`` pipeline stage. You can
   use the ``SearchOperator.vectorSearch()`` builder method to perform approximate nearest neighbor
