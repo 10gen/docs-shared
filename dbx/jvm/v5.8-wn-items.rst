@@ -1,0 +1,27 @@
+- Adds a typed builder API for vector search index definitions.
+
+- Adds support for the ``$rerank`` aggregation stage. When connected to an Atlas cluster running
+  MongoDB 8.3 or later, you can use the ``Aggregates.rerank()`` builder method to create this stage.
+
+- Adds support for the ``vectorSearch`` operator in a ``$search`` pipeline stage. You can
+  use the ``SearchOperator.vectorSearch()`` builder method to perform approximate nearest neighbor
+  (ANN) vector search, or ``SearchOperator.vectorSearchExact()`` for exact nearest neighbor
+  (ENN) search. The returned ``VectorSearchOperator`` supports a ``filter()`` method to apply
+  lexical prefilters.
+
+- Adds support for configuring stored source on vector search index definitions
+  by using the ``storedSource()`` method in the ``VectorSearchIndexDefinition`` class.
+
+- Adds support for requesting stored source fields in ``$vectorSearch`` results by using the
+  ``returnStoredSource()`` method in the ``VectorSearchOptions`` class.
+
+- Optimizes ``RawBsonDocument`` encode and decode performance by
+  eliminating intermediate allocations.
+
+- Fixes an OSGi bundle resolution failure when Micrometer is
+  not present.
+
+- Adds Javadoc documentation to the ``MongodbObservation`` and
+  ``MongodbObservationContext`` classes.
+
+- Upgrades the ``libmongocrypt`` version to 1.18.1.
