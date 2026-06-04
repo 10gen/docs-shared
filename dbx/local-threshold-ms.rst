@@ -11,7 +11,8 @@ within 15 milliseconds of the nearest eligible server.
 For example, suppose your replica set has five members and the
 nearest member has a ping time of 5 milliseconds. With the default
 ``localThresholdMS`` of 15 milliseconds, only members with a ping
-time of 20 milliseconds or less are within the latency window:
+time of 20 milliseconds or less are within the latency window, as
+shown in the following table:
 
 .. list-table::
    :header-rows: 1
