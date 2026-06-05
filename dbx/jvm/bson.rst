@@ -24,17 +24,14 @@ MongoDB and BSON
 
 The {+driver-short+}, which uses the BSON library, allows you to work
 with BSON data by using one of the object types that implements the
-`BSON interface <{+api-root+}/bson/org/bson/conversions/Bson.html>`__,
-including:
+`BSON interface <{+api-root+}/bson/org/bson/conversions/Bson.html>`__.
+The following types implement the BSON interface:
 
 - `Document <{+api-root+}/bson/org/bson/Document.html>`__ (BSON library package)
 - `BsonDocument <{+api-root+}/bson/org/bson/BsonDocument.html>`__ (BSON library package)
 - `RawBsonDocument <{+api-root+}/bson/org/bson/RawBsonDocument.html>`__ (BSON library package)
 - `JsonObject <{+api-root+}/bson/org/bson/json/JsonObject.html>`__ (BSON library package)
 - `BasicDBObject <{+core-api+}/BasicDBObject.html>`__ (JVM package)
-
-To learn more information about using these object types, see the
-|document-guide|.
 
 Install the BSON Library
 ------------------------
