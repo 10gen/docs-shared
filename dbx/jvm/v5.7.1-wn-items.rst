@@ -1,0 +1,4 @@
+- Fixes Javadoc warnings in the Micrometer integration.
+
+- Marks Micrometer OSGi imports as optional to resolve bundle
+  resolution issues in OSGi runtime environments.
