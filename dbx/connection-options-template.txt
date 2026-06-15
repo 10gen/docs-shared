@@ -92,18 +92,8 @@ The following code example shows how to perform the preceding steps:
    :start-after:
    :end-before:
 
-Connection Options
-------------------
-
-The following sections describe the connection options available in the
-{+driver-short+} and how to specify them by using a connection string directly or
-a URI option. Select the :guilabel:`Connection String` tab  or :guilabel:`URI Option` 
-tab to see the corresponding syntax.
-
-.. _template-replica-set-options:
-
 Replica Set Options
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 .. tabs::
 
@@ -111,7 +101,7 @@ Replica Set Options
       :tabid: mongoc-connection-uri
 
       Direct Connection
-      ```````````````````
+      ~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/directConnection.rst
 
@@ -129,7 +119,7 @@ Replica Set Options
          :end-before:
 
       Replica Set
-      ````````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/replicaSetName.rst
 
@@ -150,7 +140,7 @@ Replica Set Options
       :tabid: mongo-url-builder
 
       Direct Connection
-      `````````````````
+      ~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/directConnection.rst
 
@@ -168,7 +158,7 @@ Replica Set Options
          :end-before:
 
       Replica Set
-      ``````````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/replicaSetName.rst
 
@@ -186,7 +176,7 @@ Replica Set Options
          :end-before:
 
 TLS Options
-~~~~~~~~~~~
+-----------
 
 .. tabs::
 
@@ -194,7 +184,7 @@ TLS Options
       :tabid: mongoc-connection-uri
 
       Enable TLS
-      ````````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/useTls.rst
 
@@ -212,7 +202,7 @@ TLS Options
          :end-before:
 
       Allow Insecure TLS
-      ````````````````````
+      ~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
 
@@ -230,7 +220,7 @@ TLS Options
          :end-before:
 
       TLS Disable Certificate Revocation Check
-      ``````````````````````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. TODO: Driver specific content, decide whether to use or delete this section.
 
@@ -245,7 +235,7 @@ TLS Options
          :end-before:
 
       SSL Options
-      ```````````
+      ~~~~~~~~~~~
 
       .. TODO: Driver specific content, decide whether to use or delete this section.
 
@@ -259,7 +249,7 @@ TLS Options
       :tabid: mongo-url-builder
 
       Enable TLS
-      ```````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/useTls.rst
 
@@ -277,7 +267,7 @@ TLS Options
          :end-before:
 
       Allow Insecure TLS
-      ```````````````````
+      ~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/allowInsecureTls.rst
 
@@ -295,7 +285,7 @@ TLS Options
          :end-before:
 
       TLS Disable Certificate Revocation Check
-      ``````````````````````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. TODO: Driver specific content, decide whether to use or delete this section.
 
@@ -310,7 +300,7 @@ TLS Options
          :end-before:
 
       SSL Options
-      ```````````
+      ~~~~~~~~~~~
 
       TLS/SSL options, including client certificates, revocation handling, and
       enabled and disabled TLS/SSL protocols. The default value is ``null``.
@@ -329,7 +319,7 @@ TLS Options
 For more information on TLS options, see the :ref:`template-tls` guide.
 
 Timeout Options
-~~~~~~~~~~~~~~~
+---------------
 
 .. tabs::
 
@@ -337,7 +327,7 @@ Timeout Options
       :tabid: mongo-client-settings
 
       Connect Timeout
-      `````````````````
+      ~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/connectTimeout.rst
 
@@ -355,7 +345,7 @@ Timeout Options
          :end-before:
 
       Socket Timeout
-      `````````````````
+      ~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/socketTimeout.rst
 
@@ -376,7 +366,7 @@ Timeout Options
       :tabid: mongo-url-builder
 
       Connect Timeout
-      `````````````````
+      ~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/connectTimeout.rst
 
@@ -394,7 +384,7 @@ Timeout Options
          :end-before:
 
       Socket Timeout
-      ``````````````
+      ~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/socketTimeout.rst
 
@@ -412,7 +402,7 @@ Timeout Options
          :end-before:
 
 Compression Options
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 .. tabs::
 
@@ -420,7 +410,7 @@ Compression Options
       :tabid: mongo-client-settings
 
       Compressors
-      ```````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/compressors.rst
 
@@ -441,7 +431,7 @@ Compression Options
       :tabid: mongo-url-builder
 
       Compressors
-      ```````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/compressors.rst
 
@@ -459,7 +449,7 @@ Compression Options
          :end-before:
 
 Connection Pool Options
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 .. tabs::
 
@@ -467,7 +457,7 @@ Connection Pool Options
       :tabid: mongo-client-settings
 
       Max Pool Size
-      ``````````````
+      ~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
 
@@ -485,7 +475,7 @@ Connection Pool Options
          :end-before:
 
       Wait Queue Timeout
-      ```````````````````
+      ~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
 
@@ -506,7 +496,7 @@ Connection Pool Options
       :tabid: mongo-url-builder
 
       Max Connection Pool Size
-      ``````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/maxConnectionPoolSize.rst
 
@@ -535,7 +525,7 @@ Connection Pool Options
          :end-before:
 
       Wait Queue Timeout
-      ```````````````````
+      ~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/waitQueueTimeout.rst
 
@@ -555,7 +545,7 @@ Connection Pool Options
 To learn more about connection pools, see the :ref:`template-connection-pools` guide.
 
 Write Concern Options
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 .. tabs::
 
@@ -563,7 +553,8 @@ Write Concern Options
       :tabid: mongo-client-settings
 
       w
-      ```
+      ~
+
       .. sharedinclude:: dbx/connection-options/wConcern.rst
 
       **Data Type:**
@@ -580,7 +571,7 @@ Write Concern Options
          :end-before:
 
       w Timeout
-      ```````````
+      ~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/wTimeout.rst
 
@@ -598,7 +589,7 @@ Write Concern Options
          :end-before:
 
       Journal
-      ```````
+      ~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/journal.rst
 
@@ -619,7 +610,8 @@ Write Concern Options
       :tabid: mongo-url-builder
 
       w
-      ```
+      ~
+
       .. sharedinclude:: dbx/connection-options/wConcern.rst
 
       **Data Type:**
@@ -627,19 +619,6 @@ Write Concern Options
       **Default Value:**
 
       **Example:**
-
-      .. TODO: Driver specific content, decide whether to use or delete this section. Ex of adding additional code examples.
-
-      You can set ``w`` by using the ``MONGOC_URI_W`` option:
-
-      .. literalinclude::
-         :language:
-         :copyable: true
-         :dedent:
-         :start-after:
-         :end-before:
-
-      You can also set ``w`` by using a ``mongoc_write_concern_t`` structure:
 
       .. literalinclude::
          :language:
@@ -649,7 +628,7 @@ Write Concern Options
          :end-before:
 
       w Timeout
-      ```````````
+      ~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/wTimeout.rst
 
@@ -659,19 +638,6 @@ Write Concern Options
 
       **Example:**
 
-      .. TODO: Driver specific content, decide whether to use or delete this section.
-
-      You can set ``wtimeoutms`` by using the ``MONGOC_URI_WTIMEOUTMS`` option:
-
-      .. literalinclude::
-         :language:
-         :copyable: true
-         :dedent:
-         :start-after:
-         :end-before:
-
-      You can also set ``wtimeoutms`` by using a ``mongoc_write_concern_t`` structure:
-
       .. literalinclude::
          :language:
          :copyable: true
@@ -680,7 +646,7 @@ Write Concern Options
          :end-before:
 
       Journal
-      ```````
+      ~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/journal.rst
 
@@ -690,19 +656,6 @@ Write Concern Options
 
       **Example:**
 
-      .. TODO: Driver specific content, decide whether to use or delete this section.
-
-      You can set ``journal`` by using the ``MONGOC_URI_JOURNAL`` option:
-
-      .. literalinclude::
-         :language:
-         :copyable: true
-         :dedent:
-         :start-after:
-         :end-before:
-
-      You can also set ``journal`` by using a ``mongoc_write_concern_t`` structure:
-
       .. literalinclude::
          :language:
          :copyable: true
@@ -711,7 +664,7 @@ Write Concern Options
          :end-before:
 
 Read Concern Options
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 .. tabs::
 
@@ -720,7 +673,7 @@ Read Concern Options
 
 
       Read Concern Level
-      ````````````````````
+      ~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
 
@@ -741,7 +694,7 @@ Read Concern Options
       :tabid: mongo-url-builder
 
       Read Concern Level
-      ````````````````````
+      ~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/readConcernLevel.rst
 
@@ -772,7 +725,7 @@ Read Concern Options
          :end-before:
 
 Read Preference Options
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 .. tabs::
 
@@ -780,7 +733,7 @@ Read Preference Options
       :tabid: mongo-client-settings
 
       Read Preference
-      `````````````````
+      ~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/readPreference.rst
 
@@ -798,7 +751,7 @@ Read Preference Options
          :end-before:
 
       Max Staleness
-      ``````````````
+      ~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/maxStaleness.rst
 
@@ -816,7 +769,7 @@ Read Preference Options
          :end-before:
 
       Local Threshold
-      ```````````````
+      ~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/localThreshold.rst
 
@@ -837,7 +790,7 @@ Read Preference Options
       :tabid: mongo-url-builder
 
       Read Preference
-      `````````````````
+      ~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/readPreference.rst
 
@@ -868,7 +821,7 @@ Read Preference Options
          :end-before:
 
       Max Staleness
-      ``````````````
+      ~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/maxStaleness.rst
 
@@ -899,7 +852,7 @@ Read Preference Options
          :end-before:
 
       Local Threshold
-      ```````````````
+      ~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/localThreshold.rst
 
@@ -917,7 +870,7 @@ Read Preference Options
          :end-before:
 
 Authentication Options
-~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 .. tabs::
 
@@ -925,7 +878,7 @@ Authentication Options
       :tabid: mongo-client-settings
 
       Authentication Mechanism
-      ``````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/authMechanism.rst
 
@@ -952,7 +905,7 @@ Authentication Options
       :tabid: mongo-url-builder
 
       Authentication Mechanism
-      ``````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/authMechanism.rst
 
@@ -971,7 +924,7 @@ Authentication Options
          :emphasize-lines: 3
 
 Server Selection and Discovery Options
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 .. tabs::
 
@@ -979,7 +932,7 @@ Server Selection and Discovery Options
       :tabid: mongo-client-settings
 
       Heartbeat Frequency
-      ````````````````````
+      ~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
 
@@ -997,7 +950,7 @@ Server Selection and Discovery Options
          :end-before:
 
       Server Selection Timeout
-      ``````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
 
@@ -1015,7 +968,7 @@ Server Selection and Discovery Options
          :end-before:
 
       Socket Check Interval
-      ```````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
 
@@ -1036,7 +989,7 @@ Server Selection and Discovery Options
       :tabid: mongo-url-builder
 
       Heartbeat Frequency
-      ````````````````````
+      ~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/heartbeatFrequency.rst
 
@@ -1054,7 +1007,7 @@ Server Selection and Discovery Options
          :end-before:
 
       Server Selection Timeout
-      `````````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/serverSelectionTimeout.rst
 
@@ -1072,7 +1025,7 @@ Server Selection and Discovery Options
          :end-before:
 
       Socket Check Interval
-      ```````````````````````
+      ~~~~~~~~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/socketCheckInterval.rst
 
@@ -1090,7 +1043,7 @@ Server Selection and Discovery Options
          :end-before:
 
 Retry Options
-~~~~~~~~~~~~~
+-------------
 
 .. tabs::
 
@@ -1098,7 +1051,7 @@ Retry Options
       :tabid: mongo-client-settings
 
       Retry Reads
-      `````````````
+      ~~~~~~~~~~~
       
       .. sharedinclude:: dbx/connection-options/retryReads.rst
 
@@ -1116,8 +1069,8 @@ Retry Options
          :end-before:
 
       Retry Writes
-      ````````````
-      
+      ~~~~~~~~~~~~
+
       .. sharedinclude:: dbx/connection-options/retryWrites.rst
 
       **Data Type:**
@@ -1137,7 +1090,7 @@ Retry Options
       :tabid: mongo-url-builder
 
       Retry Reads
-      `````````````
+      ~~~~~~~~~~~
       
       .. sharedinclude:: dbx/connection-options/retryReads.rst
 
@@ -1155,7 +1108,7 @@ Retry Options
          :end-before:
 
       Retry Writes
-      ``````````````
+      ~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/retryWrites.rst
 
@@ -1189,7 +1142,7 @@ Retry Options
       {+language+}
 
 Miscellaneous Options
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 .. tabs::
 
@@ -1197,7 +1150,7 @@ Miscellaneous Options
       :tabid: mongo-client-settings
 
       Application Name
-      `````````````````
+      ~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/applicationName.rst
 
@@ -1215,7 +1168,7 @@ Miscellaneous Options
          :end-before:
 
       Load Balanced
-      ``````````````
+      ~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/loadBalanced.rst
 
@@ -1233,7 +1186,7 @@ Miscellaneous Options
          :end-before:
 
       SrvMaxHosts
-      ```````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
 
@@ -1254,7 +1207,7 @@ Miscellaneous Options
       :tabid: mongo-url-builder
 
       Application Name
-      ````````````````
+      ~~~~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/applicationName.rst
 
@@ -1272,7 +1225,7 @@ Miscellaneous Options
          :end-before:
 
       Load Balanced
-      ``````````````
+      ~~~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/loadBalanced.rst
 
@@ -1290,7 +1243,7 @@ Miscellaneous Options
          :end-before:
 
       SrvMaxHosts
-      ```````````
+      ~~~~~~~~~~~
 
       .. sharedinclude:: dbx/connection-options/srvMaxHosts.rst
 
@@ -1312,4 +1265,3 @@ Additional Information
 
 For more information about the types used on this page, see the
 following API documentation:
-
