@@ -3,11 +3,14 @@
   on MongoDB 9.0 and later. To learn more about QE, see |encrypt-link|.
 
 - Renames the explicit encryption API for QE string queries from
-  ``Text`` to ``String``. The new ``StringOptions`` class and the
-  ``EncryptOptions.stringOptions()`` and
-  ``EncryptOptions.getStringOptions()`` methods replace the deprecated
-  ``TextOptions`` class and its ``textOptions()`` and
-  ``getTextOptions()`` methods. To perform a QE string query, set the
-  encryption algorithm to ``"String"``.
+  ``Text`` to ``String``. To perform a QE string query, make the
+  following changes:
+
+  - Use the ``StringOptions`` class instead of ``TextOptions``.
+  - Use the ``EncryptOptions.stringOptions()`` method instead of
+    ``textOptions()``.
+  - Use the ``EncryptOptions.getStringOptions()`` method instead of
+    ``getTextOptions()``.
+  - Set the encryption algorithm to ``"String"``.
 
 - Upgrades the ``libmongocrypt`` version to 1.20.0.
