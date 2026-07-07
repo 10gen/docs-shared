@@ -1,0 +1,16 @@
+- Promotes Queryable Encryption (QE) prefix, suffix, and substring
+  queries to general availability (GA). These query types are supported
+  on MongoDB 9.0 and later. To learn more about QE, see |encrypt-link|.
+
+- Renames the explicit encryption API for QE string queries from
+  ``Text`` to ``String``. To perform a QE string query, make the
+  following changes:
+
+  - Use the ``StringOptions`` class instead of ``TextOptions``.
+  - Use the ``EncryptOptions.stringOptions()`` method instead of
+    ``textOptions()``.
+  - Use the ``EncryptOptions.getStringOptions()`` method instead of
+    ``getTextOptions()``.
+  - Set the encryption algorithm to ``"String"``.
+
+- Upgrades the ``libmongocrypt`` version to 1.20.0.
