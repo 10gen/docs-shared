@@ -17,12 +17,9 @@ Compression Algorithms
 
 MongoDB drivers support the following compression algorithms:
 
-- `Snappy <https://google.github.io/snappy/>`__: available in
-  {+mdb-server+} 3.6 and later.
-- `Zlib <https://zlib.net/>`__: available in {+mdb-server+} 3.6 and
-  later.
-- `Zstandard <https://facebook.github.io/zstd/>`__: available in
-  {+mdb-server+} 4.2 and later.
+- `Snappy <https://google.github.io/snappy/>`__
+- `Zlib <https://zlib.net/>`__
+- `Zstandard <https://facebook.github.io/zstd/>`__
 
 Network Compression Benefits
 ----------------------------
