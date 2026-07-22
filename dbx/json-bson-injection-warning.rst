@@ -7,8 +7,4 @@
    API request, or another untrusted source.
 
    To learn more about validating input before conversion, see
-   :ref:`client-libraries-security-best-practices`.
-
-.. TODO: DOCSP-61609 must define a page with the label
-   client-libraries-security-best-practices before this ref resolves.
-   Update the label here if DOCSP-61609 ships with a different one.
+   :ref:`client-libraries-best-practices`.
