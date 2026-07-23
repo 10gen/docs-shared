@@ -7,4 +7,4 @@
    API request, or another untrusted source.
 
    To learn more about validating input before conversion, see
-   :ref:`client-libraries-best-practices`.
+   :ref:`best-practices-validate-json-bson-input`.
