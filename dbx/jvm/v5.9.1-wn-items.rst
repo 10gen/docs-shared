@@ -1,0 +1,2 @@
+- Fixes an issue where the driver did not correctly resolve forwarded
+  type arguments across POJO class hierarchy edges.
