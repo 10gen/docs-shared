@@ -13,7 +13,7 @@
 
    Adaptive rate limiting helps manage server load by dynamically adjusting
    request rates based on current conditions. This feature is available on
-   MongoDB 8.3 and later.
+   MongoDB 9.0 and later.
 
    For more information about IWM, see the :atlas:`Reliability, Availability,
    and Workload Management </intelligent-workload-management/>` page or
