@@ -49,7 +49,7 @@ Queryable Encryption
 Queryable Encryption is an in-use encryption feature that encrypts
 each value uniquely and allows you to query encrypted fields.
 Queryable Encryption supports equality queries. Starting in MongoDB
-Server 8.0, it also supports range queries.
+Server 8.0, it also supports range queries{+qe-9-0-note+}.
 
 To learn more about Queryable Encryption, see :manual:`Queryable
 Encryption </core/queryable-encryption/>` in the Server manual.
