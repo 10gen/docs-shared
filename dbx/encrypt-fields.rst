@@ -46,15 +46,11 @@ MongoDB offers the following features to enable in-use encryption:
 Queryable Encryption
 ~~~~~~~~~~~~~~~~~~~~
 
-Queryable Encryption is the next-generation in-use encryption feature,
-first introduced as a preview feature in MongoDB Server version 6.0 and
-as a generally available (GA) feature in MongoDB 7.0. Queryable
-Encryption supports searching encrypted fields for equality and encrypts
-each value uniquely.
-
-.. important:: Preview Feature Incompatible with MongoDB 7.0
-   
-   The implementation of Queryable Encryption in MongoDB 6.0 is incompatible with the GA version introduced in MongoDB 7.0. The Queryable Encryption preview feature is no longer supported.
+Queryable Encryption is an in-use encryption feature that encrypts
+each value uniquely and allows you to query encrypted fields.
+Queryable Encryption supports equality queries. Starting in MongoDB
+Server 8.0, it also supports range queries, and starting in MongoDB
+Server 9.0, it supports prefix, suffix, and substring queries.
 
 To learn more about Queryable Encryption, see :manual:`Queryable
 Encryption </core/queryable-encryption/>` in the Server manual.
