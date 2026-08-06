@@ -48,7 +48,7 @@ Queryable Encryption
 
 Queryable Encryption (QE) is an in-use encryption feature that
 supports querying uniquely encrypted field values, including
-equality, range, and prefix, suffix, and substring queries. Range
+equality, range, prefix, suffix, and substring queries. Range
 query support requires MongoDB Server 8.0 or later. Prefix, suffix,
 and substring query support requires MongoDB Server 9.0 or later.
 
@@ -60,21 +60,23 @@ Encryption </core/queryable-encryption/>` in the Server manual.
 Client-side Field Level Encryption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Client-side Field Level Encryption (CSFLE) was introduced in MongoDB
-Server version 4.2 and supports searching encrypted fields for equality.
-CSFLE differs from Queryable Encryption in that you can select either a
-deterministic or random encryption algorithm to encrypt fields. You can only
-query encrypted fields that use a deterministic encryption algorithm when
-using CSFLE. When you use a random encryption algorithm to encrypt
-fields in CSFLE, they can be decrypted, but you cannot perform equality
-queries on those fields. When you use Queryable Encryption, you cannot
-specify the encryption algorithm, but you can query all encrypted
-fields.
+Client-side Field Level Encryption (CSFLE) supports searching encrypted
+fields for equality. MongoDB Server version 4.2 introduced CSFLE.
 
-When you deterministically encrypt a value, the same input value
-produces the same output value. While deterministic encryption allows
-you to perform queries on those encrypted fields, encrypted data with
-low cardinality is susceptible to code breaking by frequency analysis.
+Unlike QE, CSFLE requires you to select an encryption
+algorithm for each field, and that choice determines whether you can
+query the field. Deterministic encryption always produces the same
+output value for the same input value. Because matching values look
+the same after encryption, you can run equality queries on these
+fields. Randomized encryption produces a different output value each
+time it encrypts the same input value. Drivers can decrypt these fields,
+but you cannot query them.
+
+Deterministic encryption trades some confidentiality for query support.
+When an encrypted field has low cardinality, an attacker can compare
+how often each encrypted value appears and infer the original values.
+This technique is called frequency analysis. To protect fields that
+you do not query, use randomized encryption.
 
 .. tip::
 
