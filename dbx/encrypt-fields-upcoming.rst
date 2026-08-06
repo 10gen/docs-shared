@@ -46,11 +46,11 @@ MongoDB offers the following features to enable in-use encryption:
 Queryable Encryption
 ~~~~~~~~~~~~~~~~~~~~
 
-Queryable Encryption is an in-use encryption feature that encrypts
-each value uniquely and allows you to query encrypted fields.
-Queryable Encryption supports equality queries. Starting in MongoDB
-Server 8.0, it also supports range queries, and starting in MongoDB
-Server 9.0, it supports prefix, suffix, and substring queries.
+Queryable Encryption (QE) is an in-use encryption feature that
+supports querying uniquely encrypted field values, including
+equality, range, and prefix, suffix, and substring queries. Range
+query support requires MongoDB Server 8.0 or later. Prefix, suffix,
+and substring query support requires MongoDB Server 9.0 or later.
 
 To learn more about Queryable Encryption, see :manual:`Queryable
 Encryption </core/queryable-encryption/>` in the Server manual.
