@@ -11,9 +11,9 @@
    client-side request throttling. Depending on your situation,
    application-side changes may be preferable or necessary.
 
-   Adaptive rate limiting helps manage server load by dynamically adjusting
-   request rates based on current conditions. This feature is available on
-   MongoDB 9.0 and later.
+   Overload Protection helps manage server load by rejecting or terminating
+   excess work during sustained overload. This feature is available on MongoDB
+   9.0 and later.
    
    For more information about IWM, see the :atlas:`Intelligent Workload
    Management </intelligent-workload-management/>` page or :atlas:`Overload
