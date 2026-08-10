@@ -14,9 +14,8 @@
    Adaptive rate limiting helps manage server load by dynamically adjusting
    request rates based on current conditions. This feature is available on
    MongoDB 9.0 and later.
-
-   For more information about IWM, see the :atlas:`Reliability, Availability,
-   and Workload Management </intelligent-workload-management/>` page or
-   :atlas:`Overload Errors
-   </overload-errors/?interface=driver&language=|language|>` page in the Atlas
-   documentation.
+   
+   For more information about IWM, see the :atlas:`Intelligent Workload
+   Management </intelligent-workload-management/>` page or :atlas:`Overload
+   Errors </overload-errors/?interface=driver&language=|language|>` page in the
+   Atlas documentation.
