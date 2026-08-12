@@ -15,7 +15,7 @@
    and helps manage server load by rejecting or terminating excess work during
    sustained overload. This feature is available on MongoDB 9.0 and later.
    
-   For more information about IWM or Overload Protection, see the :atlas:`Intelligent Workload
+   For more information about IWM or handling overload errors, see the :atlas:`Intelligent Workload
    Management </intelligent-workload-management/>` page or :atlas:`Overload
    Errors </overload-errors/?interface=driver&language=|language|>` page in the
    Atlas documentation.
