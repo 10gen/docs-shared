@@ -1,0 +1,14 @@
+- Fixes an issue where ``ProxySettings.toString()`` included the
+  SOCKS5 proxy username and password, which caused these credentials
+  to appear in application logs. This issue affects driver versions
+  4.11.0 through 5.9.1. To learn more, see `JAVA-6266
+  <https://jira.mongodb.org/browse/JAVA-6266>`__ and `CVE-2026-18710
+  <https://www.cve.org/CVERecord?id=CVE-2026-18710>`__.
+
+.. warning:: Suppress the Log Message Without Upgrading
+
+   If you use SOCKS5 proxy authentication and can't upgrade to v5.9.2, set the
+   ``org.mongodb.driver.client`` logger to ``WARN`` or higher to suppress the
+   client-construction message. We don't recommend this as a long-term measure,
+   because it silences diagnostic information that is valuable for support and
+   it doesn't remove credentials that are already written to existing logs.
