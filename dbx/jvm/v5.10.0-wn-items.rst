@@ -1,0 +1,11 @@
+- Adds the ``$scoreFusion`` aggregation stage, which combines and
+  normalizes the scores of multiple search pipelines. This stage
+  requires MongoDB 8.2 or later.
+
+- Adds a fluent builder API for the ``$score`` aggregation stage.
+  Use this API to configure score normalization, weighting, and
+  score details. This feature requires MongoDB 8.2 or later.
+
+- Adds the ``parentFilter`` and ``nestedOptions`` options, which
+   allow nested embeddings and arrays of embeddings in
+  ``$vectorSearch`` queries. 
