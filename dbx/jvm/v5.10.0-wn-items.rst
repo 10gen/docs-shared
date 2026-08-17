@@ -7,5 +7,5 @@
   score details. This feature requires MongoDB 8.2 or later.
 
 - Adds the ``parentFilter`` and ``nestedOptions`` options, which
-   allow nested embeddings and arrays of embeddings in
-  ``$vectorSearch`` queries. 
+  allow nested embeddings and arrays of embeddings in
+  ``$vectorSearch`` queries.
