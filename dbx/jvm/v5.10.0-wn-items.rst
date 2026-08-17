@@ -6,6 +6,6 @@
   Use this API to configure score normalization, weighting, and
   score details. This feature requires MongoDB 8.2 or later.
 
-- Adds support for nested embeddings and arrays of embeddings in
-  ``$vectorSearch`` queries through the ``parentFilter`` and
-  ``nestedOptions`` options.
+- Adds the ``parentFilter`` and ``nestedOptions`` options, which
+   allow nested embeddings and arrays of embeddings in
+  ``$vectorSearch`` queries. 
