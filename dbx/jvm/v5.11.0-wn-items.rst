@@ -1,9 +1,4 @@
 - Adds support for routing Key Management Service (KMS) requests
   through an HTTP proxy when you use Client-Side Field Level
-  Encryption (CSFLE) or Queryable Encryption. To route KMS requests
-  through a proxy, set a KMS connect callback on your client
-  encryption or automatic encryption settings. The callback opens a
-  tunnel to the KMS host and returns the socket to the driver, which
-  then performs its own TLS handshake with the KMS host. Your
-  callback must not negotiate TLS with the KMS host itself. This
+  Encryption (CSFLE) or Queryable Encryption. This
   feature applies only to the synchronous driver.
