@@ -11,8 +11,8 @@
    application-side changes may be preferable or necessary. 
 
    Load Shedding is a feature of IWM, and helps manage server load by rejecting
-   or terminating excess work during sustained overload. This feature is
-   available on MongoDB 9.0 and later.
+   excess operations during sustained overload. This feature is available on
+   MongoDB 9.0 and later. 
    
    For more information about IWM or handling overload errors, see the
    :atlas:`Intelligent Workload Management </intelligent-workload-management/>`
