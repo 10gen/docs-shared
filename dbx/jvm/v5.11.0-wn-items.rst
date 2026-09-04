@@ -1,0 +1,4 @@
+- Adds support for routing Key Management Service (KMS) requests
+  through an HTTP proxy when you use Client-Side Field Level
+  Encryption (CSFLE) or Queryable Encryption. This
+  feature applies only to the synchronous driver.
