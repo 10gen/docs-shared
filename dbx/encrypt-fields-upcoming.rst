@@ -52,6 +52,8 @@ equality, range, prefix, suffix, and substring queries. Range
 query support requires MongoDB Server 8.0 or later. Prefix, suffix,
 and substring query support requires MongoDB Server 9.0 or later.
 
+|driver-specific-queryable-encryption-content|
+
 To learn more about Queryable Encryption, see :manual:`Queryable
 Encryption </core/queryable-encryption/>` in the Server manual.
 
