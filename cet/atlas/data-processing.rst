@@ -58,11 +58,17 @@ The following {+service+} features support non-US *Project Services Regions*:
 - :ref:`Data Explorer <atlas-ui>`
 - :ref:`Real Time Performance Panel <real-time-metrics-status-tab>`
 
-When the option is enabled, {+service+} will limit processing of document field
-values and database logs that are processed through Performance
-Advisor, Query Profiler, Schema Advisor, Data Explorer, and Real Time
-Performance Panel so that those field values and database logs are
-processed in a specific *Project Services Region*. 
+.. note:: Limitations for Regionalized Projects
+
+   When the option is enabled, {+service+} limits processing of
+   document field values and database logs that are processed through
+   Performance Advisor, Query Profiler, Schema Advisor, Data Explorer,
+   and Real Time Performance Panel so that those field values and
+   database logs are processed in a specific *Project Services Region*.
+
+   You can access these features only through the {+service+} console.
+   You can't access them by programmatic request to the
+   :ref:`{+atlas-admin-api+} <atlas-admin-api>`.
 
 Q: How does {+service+} select the *Project Services Region*?
 
