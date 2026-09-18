@@ -1,0 +1,20 @@
+- Adds support for MongoDB's Intelligent Workload Management (IWM).
+  The driver now gracefully handles write-blocking scenarios and
+  optimizes connection establishment during high-load conditions to
+  maintain application availability. This feature requires MongoDB
+  9.0 or later. To learn more about IWM, see :atlas:`Write-Blocking
+  </cluster-blocking-writes/>` in the Atlas documentation.
+
+  - Adds the ``maxAdaptiveRetries()`` method to
+    ``MongoClientSettings.Builder`` and the ``maxAdaptiveRetries``
+    connection string option, which configure the maximum number of
+    retry attempts for operations that fail with a
+    ``SystemOverloadedError``. The default value is ``2``.
+  - Adds the ``enableOverloadRetargeting()`` method to
+    ``MongoClientSettings.Builder`` and the
+    ``enableOverloadRetargeting`` connection string option, which
+    control whether retries of a ``SystemOverloadedError`` attempt to
+    use a different server. The default value is ``false``. This
+    setting has no effect on sharded clusters.
+  - Adds the ``SystemOverloadedError`` and ``RetryableError`` error
+    labels to ``MongoException``.
