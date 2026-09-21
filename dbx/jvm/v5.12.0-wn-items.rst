@@ -1,8 +1,8 @@
 - Adds support for MongoDB's Intelligent Workload Management (IWM).
   The driver now gracefully handles write-blocking scenarios and
   optimizes connection establishment during high-load conditions to
-  maintain application availability. This feature requires MongoDB
-  9.0 or later. This feature includes the following changes:
+  maintain application availability. This feature includes the
+  following changes:
 
   - Adds the ``maxAdaptiveRetries()`` method to
     ``MongoClientSettings.Builder`` and the ``maxAdaptiveRetries``
@@ -17,6 +17,7 @@
     setting has no effect on sharded clusters.
   - Adds the ``SystemOverloadedError`` and ``RetryableError`` error
     labels to ``MongoException``.
-    
-  To learn more about IWM, see :atlas:`Write-Blocking
-  </cluster-blocking-writes/>` in the Atlas documentation.
+
+  This feature requires MongoDB 9.0 or later. To learn more about
+  IWM, see :atlas:`Write-Blocking </cluster-blocking-writes/>` in
+  the Atlas documentation.
