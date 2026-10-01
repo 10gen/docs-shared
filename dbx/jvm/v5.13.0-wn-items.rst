@@ -1,0 +1,12 @@
+- Adds the ``srvAllowedHostsSuffix`` connection option, which sets
+  the hostname suffix that the driver uses to validate hosts returned
+  by an SRV lookup. When you set this option, the driver uses its
+  value instead of the domain that it infers from the SRV hostname.
+  You can use this option only with the ``mongodb+srv`` connection
+  string format.
+
+  Setting this option weakens a built-in safeguard against DNS
+  spoofing. To limit the hosts that the driver accepts, specify the
+  most specific suffix for your deployment, such as
+  ``.internal.example.com``, instead of a broad domain such as
+  ``.example.com``.
