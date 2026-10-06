@@ -1,0 +1,6 @@
+- Adds the ``srvAllowedHostsSuffix`` option, which you can set in your
+  connection string or by using the
+  ``ClusterSettings.Builder.srvAllowedHostsSuffix()`` method. This
+  option sets the hostname suffix that the driver uses to validate
+  hosts returned by an SRV lookup. To learn more about this option,
+  see |srv-suffix-link|.
