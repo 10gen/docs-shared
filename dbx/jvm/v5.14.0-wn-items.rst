@@ -3,9 +3,9 @@
 - Sends ``readConcern.afterClusterTime`` on write commands that run in
   a causally-consistent session.
 
-- Adds validation to the BSON skip path so that malformed BSON
-  documents that full decoding rejects are also rejected by
-  ``RawBsonDocument`` metadata accessors.
+- Adds validation to the BSON skip path so that ``RawBsonDocument``
+   metadata accessors reject the same malformed BSON documents
+   that full decoding rejects.
 
 - Fixes ``BsonBinaryWriter.pipe(byte[], int, int)`` to validate that a
   document's declared size matches its actual length. This prevents
