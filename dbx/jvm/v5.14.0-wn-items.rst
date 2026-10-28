@@ -1,0 +1,13 @@
+- Bumps the maximum wire version to 29 to support MongoDB 9.0.
+
+- Sends ``readConcern.afterClusterTime`` on write commands that run in
+  a causally-consistent session.
+
+- Adds validation to the BSON skip path so that ``RawBsonDocument``
+  metadata accessors reject the same malformed BSON documents
+  that full decoding rejects.
+
+- Fixes ``BsonBinaryWriter.pipe(byte[], int, int)`` to validate that a
+  document's declared size matches its actual length. This prevents
+  malformed ``RawBsonDocument`` instances from desynchronizing the BSON
+  structure of outbound commands.
