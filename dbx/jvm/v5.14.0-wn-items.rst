@@ -5,10 +5,9 @@
 
 - Adds validation to the BSON skip path so that malformed BSON
   documents that full decoding rejects are also rejected by
-  ``RawBsonDocument`` metadata accessors such as ``size()``,
-  ``containsKey()``, and ``get()``.
+  ``RawBsonDocument`` metadata accessors.
 
 - Fixes ``BsonBinaryWriter.pipe(byte[], int, int)`` to validate that a
-  document's declared size matches its actual length, preventing
+  document's declared size matches its actual length. This prevents
   malformed ``RawBsonDocument`` instances from desynchronizing the BSON
   structure of outbound commands.
