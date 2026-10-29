@@ -127,7 +127,7 @@ Examples of services and features for which Atlas does not regionalize data proc
 
 - :charts:`Atlas Charts </>`
 - Queries for 
-  :ref:`Atlas Data Lake <data-lake-deprecation-guide>` (*deprecated*), 
+  `Atlas Data Lake <https://www.mongodb.com/docs/data-lake-deprecation/>`__ (*deprecated*), 
   :ref:`{+Online-Archive+} <online-archive-overview>`, and 
   :ref:`{+adf+} <data-federation-overview>`
 - Database log & audit log downloads if downloaded via the
