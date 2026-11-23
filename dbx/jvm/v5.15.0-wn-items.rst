@@ -1,0 +1,14 @@
+- Adds support for propagating trace context to the server.
+
+- Adds the ``SrvHostValidator`` interface, which lets you provide a
+  custom callback that validates hosts discovered from ``SRV``
+  records. To set the callback, use the
+  ``ClusterSettings.Builder.srvHostValidator()`` method.
+
+- Reports a ``writeConcernError`` that the server returns without an
+  ``errmsg`` field. Previously, the driver threw a
+  ``BsonInvalidOperationException`` in this case.
+
+- Removes the ``prefixPreview``, ``suffixPreview``, and
+  ``substringPreview`` APIs and upgrades the ``libmongocrypt``
+  dependency.
