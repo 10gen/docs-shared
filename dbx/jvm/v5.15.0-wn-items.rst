@@ -5,9 +5,9 @@
   records. To set the callback, use the
   ``ClusterSettings.Builder.srvHostValidator()`` method.
 
-- Reports a ``writeConcernError`` that the server returns without an
-  ``errmsg`` field. Previously, the driver threw a
-  ``BsonInvalidOperationException`` in this case.
+- Reports a write concern error even when the server's
+  ``writeConcernError`` response doesn't include an ``errmsg`` field.
+  Previously, the driver threw a ``BsonInvalidOperationException``.
 
 - Removes the ``prefixPreview``, ``suffixPreview``, and
   ``substringPreview`` APIs and upgrades the ``libmongocrypt``
